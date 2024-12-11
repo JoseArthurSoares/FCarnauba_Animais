@@ -1,0 +1,8 @@
+class FCARNAUBA_CENTRO_CUSTO
+(extent FCARNAUBA_CENTRO_CUSTO description="Centro de Custo")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strDescricao size=255 description="DESCRIÇÃO" textualindex index;
+	attribute  string  strTipo  size=20  description="TIPO" index;		
+}

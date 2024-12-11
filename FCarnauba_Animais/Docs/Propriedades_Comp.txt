@@ -1,0 +1,8 @@
+class FCARNAUBA_PROPRIEDADE_COMP
+(extent FCARNAUBA_PROPRIEDADE_COMP description="Propriedades comp")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strNome size=120 description="NOME" index;
+	attribute string strIdsPropriedades size=10 description="PROPRIEDADES" index textualindex;
+}

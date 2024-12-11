@@ -1,0 +1,8 @@
+class FCARNAUBA_ITEMDESC_FINANCEIRO
+(extent FCARNAUBA_ITEMDESC_FINANCEIRO description="Item Descrição Financeiro")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strDescricao size=255 description="DESCRIÇÃO" textualindex index;
+	attribute  long  FK_intID_Grupo  description="ID GRUPO" index;
+}

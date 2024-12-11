@@ -1,0 +1,202 @@
+body {
+    background: url(../img/groovepa.png);
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+}
+
+#topo
+{
+    width: 100%;
+    height: 77px;
+    /*background: url(../img/bgTopo00.jpg) repeat-x;*/
+    background-color: #052B5C;
+    position:relative;
+}
+
+#topo div
+{
+    position: absolute;    
+}
+
+#rodape
+{
+    width: 100%;
+    height: 82px;
+    /*background: url(../img/bgRodape.jpg) repeat-x;*/
+    background-color: #052B5C;
+    position: relative;
+    bottom: -82px;
+    border-top: 2px solid grey;
+}
+
+#rodape div, #rodape2 div
+{
+    position:relative;
+    margin: auto;
+    text-align:center;
+}
+
+#rodape2
+{
+    
+    width: 100%;
+    /*background: url(../img/bgRodape.jpg) repeat-x;*/
+    background-color: #052B5C;
+    height:82px;
+    border-top: 2px solid grey;
+    position:absolute;
+    bottom:-7px;
+}
+
+.wrapper
+{
+    min-height: 97%;
+    margin:0 auto;
+    position:relative;
+    text-align:center;
+    width:100%;
+}
+
+.conteudo
+{
+    width: 998px;
+    height: 82px;
+    margin: 0 auto;
+    position: relative;
+    display:inline-block;    
+}
+/*
+#rodape2 .conteudo img
+{
+    margin:20px auto;
+}*/
+
+.conteudo2
+{
+    width: 100%;
+    height: 72px;
+    margin: 0 auto; 
+}
+
+#topo .conteudo2
+{
+    /*background: url(../img/bgTopoCo.jpg) no-repeat 351px 7px; */
+}
+
+#topo #logoGov
+{
+    float: left;
+    margin: 11px 0px 0px 20px;
+}
+#topo #logoSigePb
+{
+    float: right;
+    margin: 22px 22px 0px 0px;
+}
+
+#login {
+    width: 140px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#login #logoSistema
+{
+    margin-bottom: 20px;
+    margin-left: -7px;
+}
+
+#login label
+{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 14px;
+}
+
+#login input
+{
+    float: right;
+    font-size: 12px;
+    
+    margin-top: 7px;
+    width: 141px;
+    height: 20px;
+    border: 1px solid #cccccc;
+}
+
+
+#login input[type="submit"] {
+    /*background: url("../Account/img/btnEntra.png") no-repeat scroll 0 0 transparent; */
+    border: medium none;
+    float: right;
+    height: 19px;
+    margin: 8px 0 0 13px;
+    width: 65px;
+}
+
+#rodape .conteudo, #rodape2 .conteudo
+{
+    width: 158px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+#rodape .conteudo img, #rodape2 .conteudo img
+{
+    margin: 0px 5px 0px 0px;
+}
+
+#rodape .conteudo a 
+{
+    color:transparent;
+}
+
+#rodape .conteudo a:hover img, #rodape2 .conteudo a:hover img
+{
+    box-shadow: 0px 0px 5px #fff;
+}
+
+
+/*
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}

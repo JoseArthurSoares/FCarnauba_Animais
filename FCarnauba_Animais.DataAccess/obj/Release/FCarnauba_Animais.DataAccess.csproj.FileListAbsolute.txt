@@ -1,0 +1,8 @@
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\bin\Release\FCarnauba_Animais.DataAccess.dll
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\bin\Release\FCarnauba_Animais.DataAccess.pdb
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\bin\Release\LightInfocon.Data.LightBaseProvider.dll
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\bin\Release\LightInfocon.GoldenAccess.General.dll
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\bin\Release\LightInfocon.GoldenAccess.Web.UI.dll
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\obj\Release\FCarnauba_Animais.DataAccess.dll
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\obj\Release\FCarnauba_Animais.DataAccess.pdb
+D:\Devtree\DevBruno\FCarnauba_Animais\FCarnauba_Animais.DataAccess\obj\Release\FCarnauba_Animais.DataAccess.csprojResolveAssemblyReference.cache

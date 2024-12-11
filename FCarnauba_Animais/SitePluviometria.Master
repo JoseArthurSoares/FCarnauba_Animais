@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitePluviometria.master.cs" Inherits="FCarnauba_Animais.SitePluviometria" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>Sistema de Gestão Pecuária - Fazenda Carnaúba
+    </title>
+    <link href="./Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/geral000.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/reset000.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./Scripts/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript">
+        function setCorrectColor(isGood) {
+            if (isGood) {
+                //$("#notify_panel").css("border-color", "green");
+                $("#notify_panel").css("background-color", "#D6FFD7").css("border-color", "#029956").css("color", "#029956").css("font-size", 18);
+            } else {
+                //$("#notify_panel").css("border-color", "red");
+                $("#notify_panel").css("background-color", "#FFC9C9").css("border-color", "red").css("color", "red").css("font-size", 18);
+            }
+        }
+        $(document).ready(function () {
+            $("body").css("visibility", "visible");
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div id="topo">
+        <div class="conteudo2">
+            
+                <img id="logoGov" src="./img/logoFaze.png">
+            </a>
+            
+                <img id="logoSigePb" src="./img/logoLisa.png">
+            </a>
+        </div>
+    </div>
+    
+    <form id="Form1" runat="server" accept-charset="utf-8">
+            <div class="clear hideSkiplink" 
+                style="position:relative;z-index:100; top: 0px; left: 0px;">
+                <div style="background-color: #FFFFFF">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                        onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <DynamicMenuItemStyle BackColor="Black" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Início" Selected="True">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pluviometrico.aspx" Text="Pluviometria" Selected="True">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Relatórios"  Selected="True" NavigateUrl="~/RelatoriosPluviometria.aspx" Value="Relatórios">
+                            <asp:MenuItem NavigateUrl="~/RelatoriosPluviometria.aspx" Text="Relatório Pluviometria" Value="Relatório Pluviometria"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Gráficos"  Selected="True" NavigateUrl="~/GraficoPluviometriaDet.aspx" Value="Gráficos">
+                            <asp:MenuItem NavigateUrl="~/GraficoPluviometriaDet.aspx" Text="Gráfico Pluviometria Detalhada" Value="Gráfico Pluviometria Detalhada"></asp:MenuItem>
+                        </asp:MenuItem>                
+                        <asp:MenuItem Text="Sair" Value="Sair"  NavigateUrl="~/Account/Login.aspx?op=sair"></asp:MenuItem>    
+                    </Items>
+                    <StaticMenuItemStyle BackColor="Black" BorderColor="Black" />
+                    <StaticSelectedStyle BackColor="Black" BorderColor="Black" />
+                </asp:Menu>
+                </div>
+
+                <%--http://stackoverflow.com/questions/2497886/how-to-make-aspmenu-and-aspdropdownlist-on-one-line--%>
+                <%--<div style="display: inline-block;padding:4px 0px 0px 0px; float:right;">
+                <asp:TextBox ID="txtBusca" runat="server" Width="250"></asp:TextBox>
+                <asp:button ID="btnBuscar" runat="server" Text="Buscar"/>
+                <asp:LinkButton CssClass="link" ForeColor="#bfcbd6" ID="btnBuscaAvancada" runat="server" Text="Busca avançada"></asp:LinkButton>
+                </div>--%>
+            </div>
+            <%--<div class="loginDisplay" style="background-color: transparent">
+                <asp:Label ID="LoginName" runat="server" ForeColor="Black"></asp:Label>
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Bem vindo <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>--%>
+        <asp:Panel ID="NotificationPanel" runat="server" Visible="false">
+            <div id="notify_panel"><img src="img/delete_icon.png" onclick="$('#notify_panel').hide()" alt="Fechar" title="Fechar" />
+                <div>
+                    <asp:Label ID="NotificationLabel" runat="server">Não foi possível cadastrar o controle pluviométrico: Controle inválido.</asp:Label>
+                </div>
+            </div>
+        </asp:Panel>
+        <div class="page">
+            <div class="main">
+                <div id="title_div">
+                    <h1>
+                        <asp:Label ID="lblSubTitle" runat="server" Text="" 
+                            ViewStateMode="Enabled"></asp:Label>
+                    </h1>
+                </div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" ViewStateMode="Inherit">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>

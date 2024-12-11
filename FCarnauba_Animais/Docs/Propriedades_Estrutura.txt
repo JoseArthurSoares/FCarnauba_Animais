@@ -1,0 +1,27 @@
+class FCARNAUBA_PROPRIEDADES_ESTRUTURA
+(extent FCARNAUBA_PROPRIEDADES_ESTRUTURA description="Estrutura das propriedades")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string  strIdPropriedade description="PROPRIEDADE" index;
+	attribute date dtData description="DATA" index;
+	attribute float  decTotalPastagens  description="TOTAL PASTAGENS" index;
+	attribute float  decTotalAgricultura  description="TOTAL AGRICULTURA" index;
+	attribute float  decBenfeitorias  description="BENFEITORIAS" index;
+	attribute float  decArrendamentos  description="ARRENDAMENTOS" index;
+	attribute float  decReserva  description="RESERVA" index;
+	attribute float  decPalmaForrageira  description="PALMA FORRAGEIRA" index;
+	attribute float  decOutras  description="OUTRAS" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute set<
+                        struct {
+				attribute string  PAS_strTipo description="TIPO" index;
+				attribute float  PAS_decAreaTipo  description="ÁREA" index;
+                        } > Pastagens;
+	attribute set<
+                        struct {
+				attribute string  AGR_strTipo description="TIPO " index;
+				attribute float  AGR_decAreaTipo  description="ÁREA " index;
+                        } > Agriculturas;
+}

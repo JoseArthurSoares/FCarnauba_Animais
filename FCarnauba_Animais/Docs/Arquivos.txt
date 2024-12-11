@@ -1,0 +1,7 @@
+class FCARNAUBA_ARQUIVOS
+(extent FCARNAUBA_ARQUIVOS description="Arquivos")
+{
+    attribute autoincrement id index;
+	attribute string strArquivoGerado size=255 index;
+	attribute string strNomeOriginal size=255 index;
+}

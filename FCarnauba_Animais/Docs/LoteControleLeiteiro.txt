@@ -1,0 +1,45 @@
+class FCARNAUBA_LOTE_CONTROLE_LEITEIRO
+(extent FCARNAUBA_LOTE_CONTROLE_LEITEIRO description="Lote Controle Leiteiro")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string  strLote description="LOTE" index;
+	attribute date dtDataControle description="DATA DO CONTROLE" index;
+	attribute string  strIdPropriedade description="PROPRIEDADE" index;
+	attribute string strRaca size=100 description="RAÇA" index textualindex;
+	attribute string strLoteDataPropriedade size=200 description="LOTE DATA PROPRIEDADE" textualindex index;
+	attribute string  strCategoria  size=10  description="CATEGORIA" index;
+	attribute string  str1Ordenha  size=5  description="HORA 1ª ORDENHA" index;
+	attribute string  str2Ordenha  size=5  description="HORA 2ª ORDENHA" index;
+	attribute string  str3Ordenha  size=5  description="HORA 3ª ORDENHA" index;
+	attribute string strControlador size=120 description="CONTROLADOR" textualindex index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute boolean vfLiberarLotePesagem description="LIBERAR LOTE PARA PESAGEM" index;
+	attribute set<
+                        struct {
+				attribute  string  FK_PL_strIdMatriz description="MATRIZ" index;
+				attribute  long  PL_intDiasLactacao  description="DIAS LACTAÇÃO" index;
+				attribute  float  PL_decEsgota  description="ESGOTA" index;
+				attribute  float  PL_dec1Ordenha  description="1ª ORDENHA" index;
+				attribute  float  PL_dec2Ordenha  description="2ª ORDENHA" index;
+				attribute  float  PL_dec3Ordenha  description="3ª ORDENHA" index;
+				attribute  float  PL_decTotal  description="TOTAL" index;
+				attribute boolean PL_vfBezerrosPe description="BEZERROS AO PÉ" index;
+				attribute  long  PL_intTetosFuncionais  description="TETOS FUNCIONAIS" index;
+				attribute  document  PL_docObs  description="OBSERVAÇÕES" textualindex;
+				attribute  string  PL_strRegimeAlimentar  description="REGIME ALIMENTAR" index;
+				attribute date PL_dtDataEntradaControle description="ENTRADA DO CONTROLE" index;
+				attribute date PL_dtDataSaidaControle description="SAÍDA DO CONTROLE" index;
+				attribute  string  FK_PL_strIdCria description="CRIA" index;
+				attribute boolean PL_vfReceptora description="RECEPTORA" index;
+				attribute  float  PL_decGord1Ordenha  description="% GORDURA 1ª ORDENHA" index;
+				attribute  float  PL_decGord2Ordenha  description="% GORDURA 2ª ORDENHA" index;
+				attribute  float  PL_decGord3Ordenha  description="% GORDURA 3ª ORDENHA" index;
+				attribute  float  PL_decProt1Ordenha  description="% PROTEÍNA 1ª ORDENHA" index;
+				attribute  float  PL_decProt2Ordenha  description="% PROTEÍNA 2ª ORDENHA" index;
+				attribute  float  PL_decProt3Ordenha  description="% PROTEÍNA 3ª ORDENHA" index;
+				attribute boolean PL_vfSairControle description="SAIR DO CONTROLE" index;
+				attribute string PL_strMotivo size=100 description="MOTIVO" index;		
+                        } > Producao_de_Leite;
+}

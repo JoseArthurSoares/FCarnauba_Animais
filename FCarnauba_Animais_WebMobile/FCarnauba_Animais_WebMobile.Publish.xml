@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\FCarnaubaMobile" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Ponderal.aspx" publishTime="07/26/2024 10:24:25" />
+    <file relUrl="Principal.aspx" publishTime="07/10/2024 16:42:27" />
+    <file relUrl="Scripts/jquery-ui-1.10.3.custom.min.js" publishTime="02/22/2022 09:56:46" />
+    <file relUrl="Global.asax" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="01/11/2015 20:53:40" />
+    <file relUrl="Site.Master" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="Styles/Site.css" publishTime="07/26/2024 11:26:25" />
+    <file relUrl="bin/Infragistics2.WebUI.Shared.v7.3.dll" publishTime="09/28/2007 16:51:20" />
+    <file relUrl="img/bt_confirma_azul.gif" publishTime="07/03/2023 16:48:27" />
+    <file relUrl="About.aspx" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="img/leiteiro.png" publishTime="07/05/2024 11:33:30" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="01/11/2015 20:53:40" />
+    <file relUrl="Scripts/autonumeric.js" publishTime="10/30/2015 10:56:14" />
+    <file relUrl="Leiteiro.aspx" publishTime="07/26/2024 15:05:07" />
+    <file relUrl="bin/Infragistics2.WebUI.UltraWebNavigator.v7.3.dll" publishTime="07/25/2018 08:58:50" />
+    <file relUrl="Account/Web.config" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="Account/Register.aspx" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="Account/Login.aspx" publishTime="07/15/2024 16:04:47" />
+    <file relUrl="bin/FCarnauba_Animais.DataAccess.pdb" publishTime="07/29/2024 16:20:49" />
+    <file relUrl="bin/FCarnauba_Animais.DataAccess.dll" publishTime="07/29/2024 16:20:49" />
+    <file relUrl="bin/AjaxControlToolkit.dll" publishTime="09/25/2014 14:53:27" />
+    <file relUrl="img/sgp.png" publishTime="07/23/2024 15:32:54" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="bin/LightInfocon.GoldenAccess.Web.UI.dll" publishTime="06/21/2010 10:33:19" />
+    <file relUrl="Default.aspx" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="01/11/2015 20:53:40" />
+    <file relUrl="img/bt_cancela_azul.gif" publishTime="07/03/2023 16:57:03" />
+    <file relUrl="bin/LightInfocon.GoldenAccess.General.dll" publishTime="06/21/2010 10:33:15" />
+    <file relUrl="bin/itextsharp.dll" publishTime="06/06/2007 10:56:16" />
+    <file relUrl="img/ponderal.png" publishTime="07/05/2024 11:34:27" />
+    <file relUrl="img/edit_icon.gif" publishTime="10/30/2015 10:56:14" />
+    <file relUrl="Scripts/validator.js" publishTime="05/23/2017 16:17:54" />
+    <file relUrl="Scripts/jquery.maskedinput.js" publishTime="10/30/2015 10:56:14" />
+    <file relUrl="bin/LightInfocon.Data.LightBaseProvider.dll" publishTime="07/22/2010 15:26:38" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="img/delete_icon.png" publishTime="05/04/2016 16:21:26" />
+    <file relUrl="Styles/SiteMobile.css" publishTime="07/15/2024 09:11:41" />
+    <file relUrl="EditaMensuracao.aspx" publishTime="07/26/2024 17:18:18" />
+    <file relUrl="Web.config" publishTime="07/23/2024 15:51:54" />
+    <file relUrl="bin/FCarnauba_Animais_WebMobile.dll" publishTime="07/29/2024 16:41:51" />
+    <file relUrl="img/adicionar.png" publishTime="05/04/2016 16:26:56" />
+    <file relUrl="Scripts/jquery-1.9.1.min.js" publishTime="02/22/2022 09:56:46" />
+    <file relUrl="Scripts/jquery-migrate-1.0.0.js" publishTime="10/30/2015 10:56:14" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="07/04/2024 17:19:03" />
+    <file relUrl="bin/FCarnauba_Animais_WebMobile.pdb" publishTime="07/29/2024 16:41:51" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="07/04/2024 17:19:03" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,12 @@
+class FCARNAUBA_FATOR_CORRECAO
+(extent FCARNAUBA_FATOR_CORRECAO description="Fator de Correção - Produção de Leite")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute  long  intIntervaloPartoEntrada  description="INTERVALO ENTRE O PARTO E A ENTRADA DO CONTROLE (DIAS)" index;
+	attribute  float  decAte3  description="Até 3 anos" index;
+	attribute  float  decAte4  description="Até 4 anos" index;
+	attribute  float  decAte5  description="Até 5 anos" index;
+	attribute  float  decAte6  description="Até 6 anos" index;
+	attribute  float  decMaior6  description="Maior 6 anos" index;
+}

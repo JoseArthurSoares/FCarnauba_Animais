@@ -1,0 +1,1415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{027F5C89-A050-42E5-97F3-BA2166F4ED67}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCarnauba_Animais</RootNamespace>
+    <AssemblyName>FCarnauba_Animais</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=1.0.11119.20010, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="FCarnauba_Animais.DataAccess">
+      <HintPath>..\FCarnauba_Animais.DataAccess\bin\Debug\FCarnauba_Animais.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.Shared.v7.3, Version=7.3.20073.38, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Infragistics2.WebUI.Shared.v7.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.WebUI.UltraWebNavigator.v7.3, Version=7.3.20073.38, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Infragistics2.WebUI.UltraWebNavigator.v7.3.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInfocon.Data.LightBaseProvider, Version=4.4.1.0, Culture=neutral, PublicKeyToken=3016ddb54c1a70d5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\LightInfocon\LightBaseDataProvider\LightInfocon.Data.LightBaseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInfocon.GoldenAccess.General">
+      <HintPath>C:\Program Files (x86)\LightInfocon\GoldenAccess\Server\LightInfocon.GoldenAccess.General.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInfocon.GoldenAccess.Web.UI">
+      <HintPath>C:\Program Files (x86)\LightInfocon\GoldenAccess\Web\LightInfocon.GoldenAccess.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\img\bgRodape.jpg" />
+    <Content Include="Account\img\bgTopo00.jpg" />
+    <Content Include="Account\img\bgTopoCo.jpg" />
+    <Content Include="Account\img\btnEntra.png" />
+    <Content Include="Account\img\groovepa.png" />
+    <Content Include="Account\img\logoFaze.png" />
+    <Content Include="Account\img\logoLisa.png" />
+    <Content Include="Account\img\logoSist.png" />
+    <Content Include="Account\img\pdf_icon.png" />
+    <Content Include="Account\img\rodape10.png" />
+    <Content Include="Account\img\rodape20.png" />
+    <Content Include="Account\img\rodape30.png" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Animais.aspx" />
+    <Content Include="Arvore.aspx" />
+    <Content Include="CadastrarAnimal.aspx" />
+    <Content Include="CadastrarCdc.aspx" />
+    <Content Include="CadastrarControlePluviometrico.aspx" />
+    <Content Include="CadastrarDispositivo.aspx" />
+    <Content Include="CadastrarEstruturaPropriedade.aspx" />
+    <Content Include="CadastrarFluxoCaixa.aspx" />
+    <Content Include="CadastrarLote.aspx" />
+    <Content Include="CadastrarLotePonderal.aspx" />
+    <Content Include="Cdcs.aspx" />
+    <Content Include="DetalhesAnimal.aspx" />
+    <Content Include="DetalhesCdc.aspx" />
+    <Content Include="DetalhesCdcMatriz.aspx" />
+    <Content Include="DetalhesControleLeiteiro.aspx" />
+    <Content Include="DetalhesControlePluviometrico.aspx" />
+    <Content Include="DetalhesEstruturaPropriedade.aspx" />
+    <Content Include="DetalhesFinanceiro.aspx" />
+    <Content Include="DetalhesFluxoCaixa.aspx" />
+    <Content Include="DetalhesLote.aspx" />
+    <Content Include="DetalhesLotePonderal.aspx" />
+    <Content Include="DetalhesMensuracao.aspx" />
+    <Content Include="DetalhesMensuracaoAnimal.aspx" />
+    <Content Include="DetalhesProducaoLeite.aspx" />
+    <Content Include="Dispositivos.aspx" />
+    <Content Include="DLLS\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="DLLS\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="DLLS\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="DLLS\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="DLLS\Newtonsoft.Json.dll" />
+    <Content Include="DLLS\Newtonsoft.Json.pdb" />
+    <Content Include="DLLS\Newtonsoft.Json.xml" />
+    <Content Include="Docs\animais.txt" />
+    <Content Include="Docs\Arquivos.txt" />
+    <Content Include="Docs\CDC.txt" />
+    <Content Include="Docs\Centro_Custo.txt" />
+    <Content Include="Docs\Controle_Pluviometrico.txt" />
+    <Content Include="Docs\Empresas.txt" />
+    <Content Include="Docs\FatorCorrecao.txt" />
+    <Content Include="Docs\Financeiro.txt" />
+    <Content Include="Docs\FluxoCaixa_.txt" />
+    <Content Include="Docs\Grupo_Financeiro.txt" />
+    <Content Include="Docs\itemdesc_financeiro.txt" />
+    <Content Include="Docs\LoteControleLeiteiro.txt" />
+    <Content Include="Docs\LoteControlePonderal.txt" />
+    <Content Include="Docs\Propriedades.txt" />
+    <Content Include="Docs\Propriedades_Comp.txt" />
+    <Content Include="Docs\usuarioscad.txt" />
+    <Content Include="Docs\Venda_.txt" />
+    <Content Include="EditaAgricultura.aspx" />
+    <Content Include="EditaArrendamento.aspx" />
+    <Content Include="EditaBenfeitoria.aspx" />
+    <Content Include="EditaCdcMatriz.aspx" />
+    <Content Include="EditaControleLeiteiro.aspx" />
+    <Content Include="EditaHistorico.aspx" />
+    <Content Include="EditaMatriz.aspx" />
+    <Content Include="EditaMensuracao.aspx" />
+    <Content Include="EditaMensuracaoAnimal.aspx" />
+    <Content Include="EditaOutra.aspx" />
+    <Content Include="EditaPastagem.aspx" />
+    <Content Include="EditaProducaoLeite.aspx" />
+    <Content Include="Empresas.aspx" />
+    <Content Include="EstruturasPropriedades.aspx" />
+    <Content Include="Financeiro.aspx" />
+    <Content Include="FluxosCaixa.aspx" />
+    <Content Include="GraficoBalancoFinanceiro.aspx" />
+    <Content Include="GraficoCusteios.aspx" />
+    <Content Include="GraficoCusteioTotalXInvestimentos.aspx" />
+    <Content Include="GraficoCustosFixos.aspx" />
+    <Content Include="GraficoCustosVariaveis.aspx" />
+    <Content Include="GraficoPluviometriaDet.aspx" />
+    <Content Include="img\adicionar.png" />
+    <Content Include="img\Animais.png" />
+    <Content Include="img\arvoregenealogica.png" />
+    <Content Include="img\aviso.png" />
+    <Content Include="img\bgRodape.jpg" />
+    <Content Include="img\bgTopo00.jpg" />
+    <Content Include="img\bgTopoCo.jpg" />
+    <Content Include="img\btnEntra.png" />
+    <Content Include="img\bt_box_azul.gif" />
+    <Content Include="img\bt_cancela_azul.gif" />
+    <Content Include="img\bt_confirma_azul.gif" />
+    <Content Include="img\bt_confirma_azul_duplo.gif" />
+    <Content Include="img\bt_delete_azul.gif" />
+    <Content Include="img\bt_edit_azul.gif" />
+    <Content Include="img\bt_novo_azul.gif" />
+    <Content Include="img\cadastro.png" />
+    <Content Include="img\collapsible_abrir.png" />
+    <Content Include="img\collapsible_fechar.png" />
+    <Content Include="img\cruzamentos.png" />
+    <Content Include="img\delete_icon.png" />
+    <Content Include="img\delete_icon_ac.png" />
+    <Content Include="img\details_icon.gif" />
+    <Content Include="img\details_icon_ac.png" />
+    <Content Include="img\edit_icon.gif" />
+    <Content Include="img\erro.png" />
+    <Content Include="img\fechar.png" />
+    <Content Include="img\financeiro.png" />
+    <Content Include="img\groovepa.png" />
+    <Content Include="img\leiteiro.png" />
+    <Content Include="img\loading_swirl.gif" />
+    <Content Include="img\logoFaze.png" />
+    <Content Include="img\logoFaze2.png" />
+    <Content Include="img\logoFazeLisa.png" />
+    <Content Include="img\logoLisa.png" />
+    <Content Include="img\logoLisa2.png" />
+    <Content Include="img\monitoramento.png" />
+    <Content Include="img\pdf_icon.png" />
+    <Content Include="img\pluviometria.png" />
+    <Content Include="img\ponderal.png" />
+    <Content Include="img\propriedades.png" />
+    <Content Include="img\simulador.png" />
+    <Content Include="img\Sobre.png" />
+    <Content Include="img\sucesso.png" />
+    <Content Include="img\tick.png" />
+    <Content Include="img\zootecnicos.png" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Inventario.aspx" />
+    <Content Include="Lotes.aspx" />
+    <Content Include="LotesPonderais.aspx" />
+    <Content Include="Monitoramento.aspx" />
+    <Content Include="Pluviometria.aspx" />
+    <Content Include="Pluviometrico.aspx" />
+    <Content Include="RContLeiteiroEnc.aspx" />
+    <Content Include="RContLeiteiroEncFilhas.aspx" />
+    <Content Include="RelatorioIndividual.aspx" />
+    <Content Include="Relatorios.aspx" />
+    <Content Include="RelatoriosControleLeiteiro.aspx" />
+    <Content Include="RelatoriosControlePonderal.aspx" />
+    <Content Include="RelatoriosFinanceiro.aspx" />
+    <Content Include="RelatoriosFinanceiroCompleto.aspx" />
+    <Content Include="RelatoriosFluxoCaixa.aspx" />
+    <Content Include="RelatoriosPluviometria.aspx" />
+    <Content Include="RelatoriosVendasAnimais.aspx" />
+    <Content Include="RelBalancoFinanceiro.aspx" />
+    <Content Include="RelCusto.aspx" />
+    <Content Include="RelDespesa.aspx" />
+    <Content Include="RelIndividual.aspx" />
+    <Content Include="RelInvestimento.aspx" />
+    <Content Include="RelLoteLeiteiro.aspx" />
+    <Content Include="RelLotePonderal.aspx" />
+    <Content Include="RelLucroFazenda.aspx" />
+    <Content Include="RelPluviometricoFaz.aspx" />
+    <Content Include="RIndiceFertilidade.aspx" />
+    <Content Include="RLotacaoMediaAnual.aspx" />
+    <Content Include="RMatrizesNBezerros.aspx" />
+    <Content Include="RPesagensRebanhos.aspx" />
+    <Content Include="RPluviometriaTodas.aspx" />
+    <Content Include="RPonderalRebanho.aspx" />
+    <Content Include="RProducaoCarne.aspx" />
+    <Content Include="RRelacaoDesmama.aspx" />
+    <Content Include="RTaxaAbate.aspx" />
+    <Content Include="RTaxaCrescimentoVegetativo.aspx" />
+    <Content Include="RTaxaDesfrute.aspx" />
+    <Content Include="RTaxaDesmame.aspx" />
+    <Content Include="RTaxaMortalidade.aspx" />
+    <Content Include="RTaxaMortalidadeIntrauterina.aspx" />
+    <Content Include="RTaxaNatalidade.aspx" />
+    <Content Include="RTaxaVendas.aspx" />
+    <Content Include="RTodosIndices.aspx" />
+    <Content Include="SAnimais.aspx" />
+    <Content Include="Scripts\autonumeric.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.0.0.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\validator.js" />
+    <Content Include="SDadosPluviometricos.aspx" />
+    <Content Include="SER.aspx" />
+    <Content Include="SGL.aspx" />
+    <Content Include="SIEP.aspx" />
+    <Content Include="SimuladorEndogamia.aspx" />
+    <Content Include="SIPP.aspx" />
+    <Content Include="SKGIEP.aspx" />
+    <Content Include="SPAL.aspx" />
+    <Content Include="SPALT.aspx" />
+    <Content Include="SPDML.aspx" />
+    <Content Include="SPL.aspx" />
+    <Content Include="SRQ.aspx" />
+    <Content Include="Styles\geral000.css" />
+    <Content Include="Styles\lightbox.css" />
+    <Content Include="Styles\reset000.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\smoothness.css" />
+    <Content Include="UserControls\EscolhaDeGrupo.ascx" />
+    <Content Include="UserControls\Mensagem.ascx" />
+    <Content Include="UserControls\UserControlAgricultura.ascx" />
+    <Content Include="UserControls\UserControlArrendamento.ascx" />
+    <Content Include="UserControls\UserControlBenfeitoria.ascx" />
+    <Content Include="UserControls\UserControlCadastraControleLeiteiro.ascx" />
+    <Content Include="UserControls\UserControlCdcMatrizes.ascx" />
+    <Content Include="UserControls\UserControlHistorico.ascx" />
+    <Content Include="UserControls\UserControlMatrizes.ascx" />
+    <Content Include="UserControls\UserControlMensuracao.ascx" />
+    <Content Include="UserControls\UserControlMensuracaoAnimal.ascx" />
+    <Content Include="UserControls\UserControlOutra.ascx" />
+    <Content Include="UserControls\UserControlPastagem.ascx" />
+    <Content Include="UserControls\UserControlProducaoLeite.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Animais.aspx.cs">
+      <DependentUpon>Animais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Animais.aspx.designer.cs">
+      <DependentUpon>Animais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Arvore.aspx.cs">
+      <DependentUpon>Arvore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Arvore.aspx.designer.cs">
+      <DependentUpon>Arvore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAnimal.aspx.cs">
+      <DependentUpon>CadastrarAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarAnimal.aspx.designer.cs">
+      <DependentUpon>CadastrarAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarCdc.aspx.cs">
+      <DependentUpon>CadastrarCdc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarCdc.aspx.designer.cs">
+      <DependentUpon>CadastrarCdc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarControlePluviometrico.aspx.cs">
+      <DependentUpon>CadastrarControlePluviometrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarControlePluviometrico.aspx.designer.cs">
+      <DependentUpon>CadastrarControlePluviometrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarDispositivo.aspx.cs">
+      <DependentUpon>CadastrarDispositivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarDispositivo.aspx.designer.cs">
+      <DependentUpon>CadastrarDispositivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarEstruturaPropriedade.aspx.cs">
+      <DependentUpon>CadastrarEstruturaPropriedade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarEstruturaPropriedade.aspx.designer.cs">
+      <DependentUpon>CadastrarEstruturaPropriedade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFluxoCaixa.aspx.cs">
+      <DependentUpon>CadastrarFluxoCaixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarFluxoCaixa.aspx.designer.cs">
+      <DependentUpon>CadastrarFluxoCaixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarLote.aspx.cs">
+      <DependentUpon>CadastrarLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarLote.aspx.designer.cs">
+      <DependentUpon>CadastrarLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarLotePonderal.aspx.cs">
+      <DependentUpon>CadastrarLotePonderal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastrarLotePonderal.aspx.designer.cs">
+      <DependentUpon>CadastrarLotePonderal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cdcs.aspx.cs">
+      <DependentUpon>Cdcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cdcs.aspx.designer.cs">
+      <DependentUpon>Cdcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSources\DataSourceAnimais.cs" />
+    <Compile Include="DataSources\DataSourceAVistaParc.cs" />
+    <Compile Include="DataSources\DataSourceCidades.cs" />
+    <Compile Include="DataSources\DataSourceCompras.cs" />
+    <Compile Include="DataSources\DataSourceDocumentos.cs" />
+    <Compile Include="DataSources\DataSourceEmpresas.cs" />
+    <Compile Include="DataSources\DataSourceFinanceiros.cs" />
+    <Compile Include="DataSources\DataSourceGrupos.cs" />
+    <Compile Include="DataSources\DataSourceItensDescricao.cs" />
+    <Compile Include="DataSources\DataSourceParcelas.cs" />
+    <Compile Include="DataSources\DataSourcePluviometria.cs" />
+    <Compile Include="DataSources\DataSourcePropriedades.cs" />
+    <Compile Include="DataSources\DataSourceVendas.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesAnimal.aspx.cs">
+      <DependentUpon>DetalhesAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesAnimal.aspx.designer.cs">
+      <DependentUpon>DetalhesAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesCdc.aspx.cs">
+      <DependentUpon>DetalhesCdc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesCdc.aspx.designer.cs">
+      <DependentUpon>DetalhesCdc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesCdcMatriz.aspx.cs">
+      <DependentUpon>DetalhesCdcMatriz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesCdcMatriz.aspx.designer.cs">
+      <DependentUpon>DetalhesCdcMatriz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesControleLeiteiro.aspx.cs">
+      <DependentUpon>DetalhesControleLeiteiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesControleLeiteiro.aspx.designer.cs">
+      <DependentUpon>DetalhesControleLeiteiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesControlePluviometrico.aspx.cs">
+      <DependentUpon>DetalhesControlePluviometrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesControlePluviometrico.aspx.designer.cs">
+      <DependentUpon>DetalhesControlePluviometrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesEstruturaPropriedade.aspx.cs">
+      <DependentUpon>DetalhesEstruturaPropriedade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesEstruturaPropriedade.aspx.designer.cs">
+      <DependentUpon>DetalhesEstruturaPropriedade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesFinanceiro.aspx.cs">
+      <DependentUpon>DetalhesFinanceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesFinanceiro.aspx.designer.cs">
+      <DependentUpon>DetalhesFinanceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesFluxoCaixa.aspx.cs">
+      <DependentUpon>DetalhesFluxoCaixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesFluxoCaixa.aspx.designer.cs">
+      <DependentUpon>DetalhesFluxoCaixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesLote.aspx.cs">
+      <DependentUpon>DetalhesLote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesLote.aspx.designer.cs">
+      <DependentUpon>DetalhesLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesLotePonderal.aspx.cs">
+      <DependentUpon>DetalhesLotePonderal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesLotePonderal.aspx.designer.cs">
+      <DependentUpon>DetalhesLotePonderal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesMensuracao.aspx.cs">
+      <DependentUpon>DetalhesMensuracao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesMensuracao.aspx.designer.cs">
+      <DependentUpon>DetalhesMensuracao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesMensuracaoAnimal.aspx.cs">
+      <DependentUpon>DetalhesMensuracaoAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesMensuracaoAnimal.aspx.designer.cs">
+      <DependentUpon>DetalhesMensuracaoAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesProducaoLeite.aspx.cs">
+      <DependentUpon>DetalhesProducaoLeite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesProducaoLeite.aspx.designer.cs">
+      <DependentUpon>DetalhesProducaoLeite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dispositivos.aspx.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dispositivos.aspx.designer.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaAgricultura.aspx.cs">
+      <DependentUpon>EditaAgricultura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaAgricultura.aspx.designer.cs">
+      <DependentUpon>EditaAgricultura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaArrendamento.aspx.cs">
+      <DependentUpon>EditaArrendamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaArrendamento.aspx.designer.cs">
+      <DependentUpon>EditaArrendamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaBenfeitoria.aspx.cs">
+      <DependentUpon>EditaBenfeitoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaBenfeitoria.aspx.designer.cs">
+      <DependentUpon>EditaBenfeitoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaCdcMatriz.aspx.cs">
+      <DependentUpon>EditaCdcMatriz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaCdcMatriz.aspx.designer.cs">
+      <DependentUpon>EditaCdcMatriz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaControleLeiteiro.aspx.cs">
+      <DependentUpon>EditaControleLeiteiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaControleLeiteiro.aspx.designer.cs">
+      <DependentUpon>EditaControleLeiteiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaHistorico.aspx.cs">
+      <DependentUpon>EditaHistorico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaHistorico.aspx.designer.cs">
+      <DependentUpon>EditaHistorico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaMatriz.aspx.cs">
+      <DependentUpon>EditaMatriz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaMatriz.aspx.designer.cs">
+      <DependentUpon>EditaMatriz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaMensuracao.aspx.cs">
+      <DependentUpon>EditaMensuracao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaMensuracao.aspx.designer.cs">
+      <DependentUpon>EditaMensuracao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaMensuracaoAnimal.aspx.cs">
+      <DependentUpon>EditaMensuracaoAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaMensuracaoAnimal.aspx.designer.cs">
+      <DependentUpon>EditaMensuracaoAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaOutra.aspx.cs">
+      <DependentUpon>EditaOutra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaOutra.aspx.designer.cs">
+      <DependentUpon>EditaOutra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaPastagem.aspx.cs">
+      <DependentUpon>EditaPastagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaPastagem.aspx.designer.cs">
+      <DependentUpon>EditaPastagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaProducaoLeite.aspx.cs">
+      <DependentUpon>EditaProducaoLeite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditaProducaoLeite.aspx.designer.cs">
+      <DependentUpon>EditaProducaoLeite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstruturasPropriedades.aspx.cs">
+      <DependentUpon>EstruturasPropriedades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstruturasPropriedades.aspx.designer.cs">
+      <DependentUpon>EstruturasPropriedades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financeiro.aspx.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financeiro.aspx.designer.cs">
+      <DependentUpon>Financeiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FluxosCaixa.aspx.cs">
+      <DependentUpon>FluxosCaixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FluxosCaixa.aspx.designer.cs">
+      <DependentUpon>FluxosCaixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoBalancoFinanceiro.aspx.cs">
+      <DependentUpon>GraficoBalancoFinanceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoBalancoFinanceiro.aspx.designer.cs">
+      <DependentUpon>GraficoBalancoFinanceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoCusteios.aspx.cs">
+      <DependentUpon>GraficoCusteios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoCusteios.aspx.designer.cs">
+      <DependentUpon>GraficoCusteios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoCusteioTotalXInvestimentos.aspx.cs">
+      <DependentUpon>GraficoCusteioTotalXInvestimentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoCusteioTotalXInvestimentos.aspx.designer.cs">
+      <DependentUpon>GraficoCusteioTotalXInvestimentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoCustosFixos.aspx.cs">
+      <DependentUpon>GraficoCustosFixos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoCustosFixos.aspx.designer.cs">
+      <DependentUpon>GraficoCustosFixos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoCustosVariaveis.aspx.cs">
+      <DependentUpon>GraficoCustosVariaveis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoCustosVariaveis.aspx.designer.cs">
+      <DependentUpon>GraficoCustosVariaveis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoPluviometriaDet.aspx.cs">
+      <DependentUpon>GraficoPluviometriaDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraficoPluviometriaDet.aspx.designer.cs">
+      <DependentUpon>GraficoPluviometriaDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.aspx.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventario.aspx.designer.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes.aspx.cs">
+      <DependentUpon>Lotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lotes.aspx.designer.cs">
+      <DependentUpon>Lotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LotesPonderais.aspx.cs">
+      <DependentUpon>LotesPonderais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LotesPonderais.aspx.designer.cs">
+      <DependentUpon>LotesPonderais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoramento.aspx.cs">
+      <DependentUpon>Monitoramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitoramento.aspx.designer.cs">
+      <DependentUpon>Monitoramento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaBase.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pluviometria.aspx.cs">
+      <DependentUpon>Pluviometria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pluviometria.aspx.designer.cs">
+      <DependentUpon>Pluviometria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pluviometrico.aspx.cs">
+      <DependentUpon>Pluviometrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pluviometrico.aspx.designer.cs">
+      <DependentUpon>Pluviometrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RContLeiteiroEnc.aspx.cs">
+      <DependentUpon>RContLeiteiroEnc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RContLeiteiroEnc.aspx.designer.cs">
+      <DependentUpon>RContLeiteiroEnc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RContLeiteiroEncFilhas.aspx.cs">
+      <DependentUpon>RContLeiteiroEncFilhas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RContLeiteiroEncFilhas.aspx.designer.cs">
+      <DependentUpon>RContLeiteiroEncFilhas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioIndividual.aspx.cs">
+      <DependentUpon>RelatorioIndividual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioIndividual.aspx.designer.cs">
+      <DependentUpon>RelatorioIndividual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios.aspx.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios.aspx.designer.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosControleLeiteiro.aspx.cs">
+      <DependentUpon>RelatoriosControleLeiteiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosControleLeiteiro.aspx.designer.cs">
+      <DependentUpon>RelatoriosControleLeiteiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosControlePonderal.aspx.cs">
+      <DependentUpon>RelatoriosControlePonderal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosControlePonderal.aspx.designer.cs">
+      <DependentUpon>RelatoriosControlePonderal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosFinanceiro.aspx.cs">
+      <DependentUpon>RelatoriosFinanceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosFinanceiro.aspx.designer.cs">
+      <DependentUpon>RelatoriosFinanceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosFinanceiroCompleto.aspx.cs">
+      <DependentUpon>RelatoriosFinanceiroCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosFinanceiroCompleto.aspx.designer.cs">
+      <DependentUpon>RelatoriosFinanceiroCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosFluxoCaixa.aspx.cs">
+      <DependentUpon>RelatoriosFluxoCaixa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosFluxoCaixa.aspx.designer.cs">
+      <DependentUpon>RelatoriosFluxoCaixa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosPluviometria.aspx.cs">
+      <DependentUpon>RelatoriosPluviometria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosPluviometria.aspx.designer.cs">
+      <DependentUpon>RelatoriosPluviometria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosVendasAnimais.aspx.cs">
+      <DependentUpon>RelatoriosVendasAnimais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatoriosVendasAnimais.aspx.designer.cs">
+      <DependentUpon>RelatoriosVendasAnimais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelBalancoFinanceiro.aspx.cs">
+      <DependentUpon>RelBalancoFinanceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelBalancoFinanceiro.aspx.designer.cs">
+      <DependentUpon>RelBalancoFinanceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelCusto.aspx.cs">
+      <DependentUpon>RelCusto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelCusto.aspx.designer.cs">
+      <DependentUpon>RelCusto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelDespesa.aspx.cs">
+      <DependentUpon>RelDespesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelDespesa.aspx.designer.cs">
+      <DependentUpon>RelDespesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelIndividual.aspx.cs">
+      <DependentUpon>RelIndividual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelIndividual.aspx.designer.cs">
+      <DependentUpon>RelIndividual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelInvestimento.aspx.cs">
+      <DependentUpon>RelInvestimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelInvestimento.aspx.designer.cs">
+      <DependentUpon>RelInvestimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelLoteLeiteiro.aspx.cs">
+      <DependentUpon>RelLoteLeiteiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelLoteLeiteiro.aspx.designer.cs">
+      <DependentUpon>RelLoteLeiteiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelLotePonderal.aspx.cs">
+      <DependentUpon>RelLotePonderal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelLotePonderal.aspx.designer.cs">
+      <DependentUpon>RelLotePonderal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelLucroFazenda.aspx.cs">
+      <DependentUpon>RelLucroFazenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelLucroFazenda.aspx.designer.cs">
+      <DependentUpon>RelLucroFazenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelPluviometricoFaz.aspx.cs">
+      <DependentUpon>RelPluviometricoFaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelPluviometricoFaz.aspx.designer.cs">
+      <DependentUpon>RelPluviometricoFaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RIndiceFertilidade.aspx.cs">
+      <DependentUpon>RIndiceFertilidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RIndiceFertilidade.aspx.designer.cs">
+      <DependentUpon>RIndiceFertilidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RLotacaoMediaAnual.aspx.cs">
+      <DependentUpon>RLotacaoMediaAnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RLotacaoMediaAnual.aspx.designer.cs">
+      <DependentUpon>RLotacaoMediaAnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RMatrizesNBezerros.aspx.cs">
+      <DependentUpon>RMatrizesNBezerros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RMatrizesNBezerros.aspx.designer.cs">
+      <DependentUpon>RMatrizesNBezerros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPesagensRebanhos.aspx.cs">
+      <DependentUpon>RPesagensRebanhos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPesagensRebanhos.aspx.designer.cs">
+      <DependentUpon>RPesagensRebanhos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPluviometriaTodas.aspx.cs">
+      <DependentUpon>RPluviometriaTodas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPluviometriaTodas.aspx.designer.cs">
+      <DependentUpon>RPluviometriaTodas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPonderalRebanho.aspx.cs">
+      <DependentUpon>RPonderalRebanho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPonderalRebanho.aspx.designer.cs">
+      <DependentUpon>RPonderalRebanho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RProducaoCarne.aspx.cs">
+      <DependentUpon>RProducaoCarne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RProducaoCarne.aspx.designer.cs">
+      <DependentUpon>RProducaoCarne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RRelacaoDesmama.aspx.cs">
+      <DependentUpon>RRelacaoDesmama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RRelacaoDesmama.aspx.designer.cs">
+      <DependentUpon>RRelacaoDesmama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaAbate.aspx.cs">
+      <DependentUpon>RTaxaAbate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaAbate.aspx.designer.cs">
+      <DependentUpon>RTaxaAbate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaCrescimentoVegetativo.aspx.cs">
+      <DependentUpon>RTaxaCrescimentoVegetativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaCrescimentoVegetativo.aspx.designer.cs">
+      <DependentUpon>RTaxaCrescimentoVegetativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaDesfrute.aspx.cs">
+      <DependentUpon>RTaxaDesfrute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaDesfrute.aspx.designer.cs">
+      <DependentUpon>RTaxaDesfrute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaDesmame.aspx.cs">
+      <DependentUpon>RTaxaDesmame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaDesmame.aspx.designer.cs">
+      <DependentUpon>RTaxaDesmame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaMortalidade.aspx.cs">
+      <DependentUpon>RTaxaMortalidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaMortalidade.aspx.designer.cs">
+      <DependentUpon>RTaxaMortalidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaMortalidadeIntrauterina.aspx.cs">
+      <DependentUpon>RTaxaMortalidadeIntrauterina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaMortalidadeIntrauterina.aspx.designer.cs">
+      <DependentUpon>RTaxaMortalidadeIntrauterina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaNatalidade.aspx.cs">
+      <DependentUpon>RTaxaNatalidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaNatalidade.aspx.designer.cs">
+      <DependentUpon>RTaxaNatalidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTaxaVendas.aspx.cs">
+      <DependentUpon>RTaxaVendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTaxaVendas.aspx.designer.cs">
+      <DependentUpon>RTaxaVendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RTodosIndices.aspx.cs">
+      <DependentUpon>RTodosIndices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTodosIndices.aspx.designer.cs">
+      <DependentUpon>RTodosIndices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAnimais.aspx.cs">
+      <DependentUpon>SAnimais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAnimais.aspx.designer.cs">
+      <DependentUpon>SAnimais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SDadosPluviometricos.aspx.cs">
+      <DependentUpon>SDadosPluviometricos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDadosPluviometricos.aspx.designer.cs">
+      <DependentUpon>SDadosPluviometricos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SER.aspx.cs">
+      <DependentUpon>SER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SER.aspx.designer.cs">
+      <DependentUpon>SER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SGL.aspx.cs">
+      <DependentUpon>SGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SGL.aspx.designer.cs">
+      <DependentUpon>SGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIEP.aspx.cs">
+      <DependentUpon>SIEP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIEP.aspx.designer.cs">
+      <DependentUpon>SIEP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimuladorEndogamia.aspx.cs">
+      <DependentUpon>SimuladorEndogamia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimuladorEndogamia.aspx.designer.cs">
+      <DependentUpon>SimuladorEndogamia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SIPP.aspx.cs">
+      <DependentUpon>SIPP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SIPP.aspx.designer.cs">
+      <DependentUpon>SIPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteCDC.Master.cs">
+      <DependentUpon>SiteCDC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteCDC.Master.designer.cs">
+      <DependentUpon>SiteCDC.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteControleLeiteiro.Master.cs">
+      <DependentUpon>SiteControleLeiteiro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteControleLeiteiro.Master.designer.cs">
+      <DependentUpon>SiteControleLeiteiro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteControlePonderal.Master.cs">
+      <DependentUpon>SiteControlePonderal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteControlePonderal.Master.designer.cs">
+      <DependentUpon>SiteControlePonderal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteEstruturaPropriedade.Master.cs">
+      <DependentUpon>SiteEstruturaPropriedade.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteEstruturaPropriedade.Master.designer.cs">
+      <DependentUpon>SiteEstruturaPropriedade.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteFluxoCaixa.Master.cs">
+      <DependentUpon>SiteFluxoCaixa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteFluxoCaixa.Master.designer.cs">
+      <DependentUpon>SiteFluxoCaixa.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteInicio.Master.cs">
+      <DependentUpon>SiteInicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteInicio.Master.designer.cs">
+      <DependentUpon>SiteInicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SitePluviometria.Master.cs">
+      <DependentUpon>SitePluviometria.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitePluviometria.Master.designer.cs">
+      <DependentUpon>SitePluviometria.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SKGIEP.aspx.cs">
+      <DependentUpon>SKGIEP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SKGIEP.aspx.designer.cs">
+      <DependentUpon>SKGIEP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPAL.aspx.cs">
+      <DependentUpon>SPAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPAL.aspx.designer.cs">
+      <DependentUpon>SPAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPALT.aspx.cs">
+      <DependentUpon>SPALT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPALT.aspx.designer.cs">
+      <DependentUpon>SPALT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPDML.aspx.cs">
+      <DependentUpon>SPDML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPDML.aspx.designer.cs">
+      <DependentUpon>SPDML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPL.aspx.cs">
+      <DependentUpon>SPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPL.aspx.designer.cs">
+      <DependentUpon>SPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SRQ.aspx.cs">
+      <DependentUpon>SRQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SRQ.aspx.designer.cs">
+      <DependentUpon>SRQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EscolhaDeGrupo.ascx.cs">
+      <DependentUpon>EscolhaDeGrupo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\EscolhaDeGrupo.ascx.designer.cs">
+      <DependentUpon>EscolhaDeGrupo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mensagem.ascx.cs">
+      <DependentUpon>Mensagem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mensagem.ascx.designer.cs">
+      <DependentUpon>Mensagem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlAgricultura.ascx.cs">
+      <DependentUpon>UserControlAgricultura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlAgricultura.ascx.designer.cs">
+      <DependentUpon>UserControlAgricultura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlArrendamento.ascx.cs">
+      <DependentUpon>UserControlArrendamento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlArrendamento.ascx.designer.cs">
+      <DependentUpon>UserControlArrendamento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlBenfeitoria.ascx.cs">
+      <DependentUpon>UserControlBenfeitoria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlBenfeitoria.ascx.designer.cs">
+      <DependentUpon>UserControlBenfeitoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlCadastraControleLeiteiro.ascx.cs">
+      <DependentUpon>UserControlCadastraControleLeiteiro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlCadastraControleLeiteiro.ascx.designer.cs">
+      <DependentUpon>UserControlCadastraControleLeiteiro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlCdcMatrizes.ascx.cs">
+      <DependentUpon>UserControlCdcMatrizes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlCdcMatrizes.ascx.designer.cs">
+      <DependentUpon>UserControlCdcMatrizes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlHistorico.ascx.cs">
+      <DependentUpon>UserControlHistorico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlHistorico.ascx.designer.cs">
+      <DependentUpon>UserControlHistorico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMatrizes.ascx.cs">
+      <DependentUpon>UserControlMatrizes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlMatrizes.ascx.designer.cs">
+      <DependentUpon>UserControlMatrizes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMensuracao.ascx.cs">
+      <DependentUpon>UserControlMensuracao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlMensuracao.ascx.designer.cs">
+      <DependentUpon>UserControlMensuracao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlMensuracaoAnimal.ascx.cs">
+      <DependentUpon>UserControlMensuracaoAnimal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlMensuracaoAnimal.ascx.designer.cs">
+      <DependentUpon>UserControlMensuracaoAnimal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlOutra.ascx.cs">
+      <DependentUpon>UserControlOutra.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlOutra.ascx.designer.cs">
+      <DependentUpon>UserControlOutra.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlPastagem.ascx.cs">
+      <DependentUpon>UserControlPastagem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlPastagem.ascx.designer.cs">
+      <DependentUpon>UserControlPastagem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlProducaoLeite.ascx.cs">
+      <DependentUpon>UserControlProducaoLeite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlProducaoLeite.ascx.designer.cs">
+      <DependentUpon>UserControlProducaoLeite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="util\ArvoreDeGrupos.cs" />
+    <Compile Include="util\AuxLogin.cs" />
+    <Compile Include="util\LoginSession.cs" />
+    <Compile Include="util\SelecaoDeGrupoEventArgs.cs" />
+    <Compile Include="util\WebUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Relatorios\Animais.rdlc" />
+    <Content Include="Relatorios\AnimaisAno.rdlc" />
+    <Content Include="Relatorios\AnimaisLactacaoAno.rdlc" />
+    <Content Include="Relatorios\ContLeiteiroEncFilhas.rdlc" />
+    <Content Include="Relatorios\ContLeiteiroRebanhoEnc.rdlc" />
+    <Content Include="Relatorios\ControleLeiteiro.rdlc" />
+    <Content Include="Relatorios\ControleLeiteiroPes.rdlc" />
+    <Content Include="Relatorios\ControlePonderalPes.rdlc" />
+    <Content Include="Relatorios\DadosPluviometricos.rdlc" />
+    <Content Include="Relatorios\ERRaca.rdlc" />
+    <Content Include="Relatorios\FilhosRaca.rdlc" />
+    <Content Include="Relatorios\FluxoCaixa.rdlc" />
+    <Content Include="Relatorios\GorduraLeiteLac.rdlc" />
+    <Content Include="Relatorios\GraficoBalancoFinanceiro.rdlc" />
+    <Content Include="Relatorios\GraficoCusteios.rdlc" />
+    <Content Include="Relatorios\GraficoCusteioTotalXInvestimentos.rdlc" />
+    <Content Include="Relatorios\GraficoCustosFixos.rdlc" />
+    <Content Include="Relatorios\GraficoCustosVariaveis.rdlc" />
+    <Content Include="Relatorios\GraficoInvestimento.rdlc" />
+    <Content Include="Relatorios\GraficoPluviometriaDet.rdlc" />
+    <Content Include="Relatorios\GraficoPluviometriaDetInv.rdlc" />
+    <Content Include="Relatorios\IndiceFertilidade.rdlc" />
+    <Content Include="Relatorios\IndividualLactacao.rdlc" />
+    <Content Include="Relatorios\LotacaoMediaAnual.rdlc" />
+    <Content Include="Relatorios\MachoFemea.rdlc" />
+    <Content Include="Relatorios\MatrizesNBezerros.rdlc" />
+    <Content Include="Relatorios\PesagensRebanhos.rdlc" />
+    <Content Include="Relatorios\Pluviometria.rdlc" />
+    <Content Include="Relatorios\PluviometriaCad.rdlc" />
+    <Content Include="Relatorios\PluviometriaTodas.rdlc" />
+    <Content Include="Relatorios\PonderalIndividual.rdlc" />
+    <Content Include="Relatorios\PonderalRebanho.rdlc" />
+    <Content Include="Relatorios\ProducaoAcumuladaLeiteLac.rdlc" />
+    <Content Include="Relatorios\ProducaoCarne.rdlc" />
+    <Content Include="Relatorios\ProducaoDiariaMaxLeite.rdlc" />
+    <Content Include="Relatorios\ProteinaLeiteLac.rdlc" />
+    <Content Include="Relatorios\RankingAcumuladaTotal.rdlc" />
+    <Content Include="Relatorios\RankingEr.rdlc" />
+    <Content Include="Relatorios\RankingFilhos.rdlc" />
+    <Content Include="Relatorios\RankingIep.rdlc" />
+    <Content Include="Relatorios\RankingIpp.rdlc" />
+    <Content Include="Relatorios\RankingKgIep.rdlc" />
+    <Content Include="Relatorios\RankingPeso.rdlc" />
+    <Content Include="Relatorios\RankingProducaoAcumulada.rdlc" />
+    <Content Include="Relatorios\RankingProducaoDiariaMaxima.rdlc" />
+    <Content Include="Relatorios\RankingProducaoDiariaMedia.rdlc" />
+    <Content Include="Relatorios\RelacaoDesmama.rdlc" />
+    <Content Include="Relatorios\RelatorioCusto.rdlc" />
+    <Content Include="Relatorios\RelatorioFinanceiro.rdlc" />
+    <Content Include="Relatorios\RelatorioFinanceiroCompleto.rdlc" />
+    <Content Include="Relatorios\RelatorioInvestimento.rdlc" />
+    <Content Include="Relatorios\RelatorioVendasAnimais.rdlc" />
+    <Content Include="Relatorios\RelDespesa.rdlc" />
+    <Content Include="Relatorios\RelLucroFazenda.rdlc" />
+    <Content Include="Relatorios\RendimentoQueijeiroLac.rdlc" />
+    <Content Include="Relatorios\ReportTemp.rdlc" />
+    <Content Include="Relatorios\TaxaAbate.rdlc" />
+    <Content Include="Relatorios\TaxaCrescimentoVegetativo.rdlc" />
+    <Content Include="Relatorios\TaxaDesfrute.rdlc" />
+    <Content Include="Relatorios\TaxaDesmame.rdlc" />
+    <Content Include="Relatorios\TaxaMortalidade.rdlc" />
+    <Content Include="Relatorios\TaxaMortalidadeIntrauterina.rdlc" />
+    <Content Include="Relatorios\TaxaNatalidade.rdlc" />
+    <Content Include="Relatorios\TaxaVendas.rdlc" />
+    <Content Include="Relatorios\TodosIndices.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\manual.pdf" />
+    <None Include="Properties\DataSources\FCarnauba_Animais.DataAccess.ResultadoBuscaAnimal.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="SiteControleLeiteiro.Master" />
+    <Content Include="SitePluviometria.Master" />
+    <Content Include="SiteCDC.Master" />
+    <Content Include="SiteFluxoCaixa.Master" />
+    <Content Include="SiteControlePonderal.Master" />
+    <Content Include="SiteInicio.Master" />
+    <Content Include="SiteEstruturaPropriedade.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>false</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>false</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

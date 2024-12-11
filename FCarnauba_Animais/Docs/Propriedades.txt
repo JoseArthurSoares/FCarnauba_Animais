@@ -1,0 +1,49 @@
+class FCARNAUBA_PROPRIEDADE
+(extent FCARNAUBA_PROPRIEDADE description="Identificação das Propriedades")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strNome size=120 description="NOME" textualindex index;
+	attribute string strLocalizacao size=50 description="LOCALIZAÇÃO" index;
+	attribute  string  strRegistroOficial description="REGISTRO OFICIAL" index;
+	attribute  float  decArea  description="ÁREA (HA)" index;
+	attribute  float  decAreaUtilizada  description="ÁREA UTILIZADA (HA)" index;
+	attribute  float  decAreaPreservacao  description="ÁREA DE PRESERVAÇÃO" index;
+	attribute  document  docAtividades  description="ATIVIDADES" textualindex;
+	attribute string strMunicipio size=120 description="MUNICÍPIO" textualindex index;
+	attribute string strUf size=2 description="UF" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute  string  strId description="ID STR" index;
+	attribute date dtData description="DATA" index;
+		attribute set<
+                        struct {
+				attribute string  PAS_strTipo description="TIPO DA PASTAGEM" index;
+				attribute float  PAS_decAreaTipo  description="ÁREA DA PASTAGEM" index;
+				attribute date PAS_dtDataPastagem description="DATA DA PASTAGEM" index;
+                        } > Pastagens;
+	attribute set<
+                        struct {
+				attribute string  AGR_strTipo description="TIPO DA AGRUCULTURA" index;
+				attribute float  AGR_decAreaTipo  description="ÁREA DA AGRUCULTURA" index;
+				attribute date AGR_dtDataAgricultura description="DATA DA AGRICULTURA" index;
+                        } > Agriculturas;
+	attribute set<
+                        struct {
+				attribute string  BEN_strTipo description="TIPO DA BENFEITORIA" index;
+				attribute float  BEN_decAreaTipo  description="ÁREA DA BENFEITORIA" index;
+				attribute date BEN_dtDataBenfeitoria description="DATA DA BENFEITORIA" index;
+                        } > Benfeitorias;
+	attribute set<
+                        struct {
+				attribute string  ARR_strTipo description="TIPO DO ARRENDAMENTO" index;
+				attribute float  ARR_decAreaTipo  description="ÁREA DO ARRENDAMENTO" index;
+				attribute date ARR_dtDataArrendamento description="DATA DO ARRENDAMENTO" index;
+                        } > Arrendamentos;	
+	attribute set<
+                        struct {
+				attribute string  OUT_strTipo description="TIPO DE OUTRAS ÁREAS" index;
+				attribute float  OUT_decAreaTipo  description="ÁREA DE OUTRAS ÁREAS" index;
+				attribute date OUT_dtDataOutrasAreas description="DATA DE OUTRAS ÁREAS" index;
+                        } > Outras;
+}

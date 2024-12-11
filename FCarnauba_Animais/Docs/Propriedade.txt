@@ -1,0 +1,18 @@
+class FCARNAUBA_PROPRIEDADE
+(extent FCARNAUBA_PROPRIEDADE description="Identificação das Propriedades")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strNome size=120 description="NOME" textualindex index;
+	attribute string strLocalizacao size=50 description="LOCALIZAÇÃO" index;
+	attribute  string  strRegistroOficial description="REGISTRO OFICIAL" index;
+	attribute  float  decArea  description="ÁREA (HA)" index;
+	attribute  float  decAreaUtilizada  description="ÁREA UTILIZADA (HA)" index;
+	attribute  float  decAreaPreservacao  description="ÁREA DE PRESERVAÇÃO" index;
+	attribute  document  docAtividades  description="ATIVIDADES" textualindex;
+	attribute string strMunicipio size=120 description="MUNICÍPIO" textualindex index;
+	attribute string strUf size=2 description="UF" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute  string  strId description="ID STR" index;	
+}

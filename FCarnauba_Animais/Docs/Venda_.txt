@@ -1,0 +1,26 @@
+class FCARNAUBA_VENDA
+(extent FCARNAUBA_VENDA description="Vendas")
+{
+	attribute autoincrement id description="id" index;
+	attribute string strDescricao size=255 description="DESCRIÇÃO" textualindex index;
+	attribute  long  FK_IdEmpresa  description="ID EMPRESA" index;
+	attribute  long  FK_IdAnimal  description="ID EMPRESA" index;
+	attribute date dtData description="DATA" index;
+	attribute  float  moeValor description="VALOR" index;
+	attribute string strFormaPagamento  size=20  description="FORMA DE PAGAMENTO" index;
+	attribute  long  intNParcelas  description="PARCELAS" index;
+	attribute set<
+                        struct {
+				attribute  long  PAR_intNParcela  description="Nº PARCELA" index;
+                                attribute date PAR_dtDataParcela description="DATA DA PARCELA" index;
+				attribute  float  PAR_moeValorInicial description="VALOR INICIAL" index;
+				attribute  float  PAR_moeValorPago description="VALOR PAGO" index;
+				attribute date PAR_dtDataPagamento description="DATA DO PAGAMENTO" index;					
+                        } > Parcelas;
+	attribute set<
+                        struct {
+                                attribute string  DOC_strDescricao  size=255  description="DESCRIÇÃO " index textualindex;
+				attribute date DOC_dtDataAnexo description="DATA DO ANEXO" index;
+				attribute string DOC_strPDFDocumento size=255 description="PDF Documento" index;					
+                        } > Documentos;
+}

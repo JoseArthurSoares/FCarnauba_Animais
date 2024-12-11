@@ -1,0 +1,17 @@
+class FCARNAUBA_EMPRESA
+(extent FCARNAUBA_EMPRESA description="Cadastro de empresas")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strRazaoSocial size=120 description="RAZÃO SOCIAL/NOME" index textualindex;
+	attribute string  strCnpjCpf size=14 description="CNPJ/CPF" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute string strEndereco size=200 description="ENDEREÇO" textualindex;
+	attribute string strInscEstadualRg size=20 description="INSCRIÇÃO ESTADUAL / RG" index;
+	attribute string strUf size=2 description="UF" index;
+	attribute string strTelefones size=100 description="TELEFONES" textualindex;
+	attribute string strTipo size=50 description="TIPO" index;
+	attribute string strEmail size=100 description="EMAIL" index;
+	attribute string strMunicipio size=60 description="Município" textualindex;
+}

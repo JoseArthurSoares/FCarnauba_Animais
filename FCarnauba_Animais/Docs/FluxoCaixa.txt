@@ -1,0 +1,14 @@
+class FCARNAUBA_FLUXO_CAIXA
+(extent FCARNAUBA_FLUXO_CAIXA description="Fluxo de Caixa")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute  string  strTipo  size=20  description="TIPO" index textualindex;
+	attribute string strDescricao size=255 description="DESCRIÇÃO" textualindex index;
+	attribute  float  moeValor  description="VALOR" index;
+	attribute date dtData description="DATA" index;
+	attribute string  FK_IdPropriedade description="PROPRIEDADE" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute string  FK_IdCentroCusto description="CENTRO DE CUSTO" index;		
+}

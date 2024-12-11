@@ -1,0 +1,41 @@
+class FCARNAUBA_LOTE_CONTROLE_PONDERAL
+(extent FCARNAUBA_LOTE_CONTROLE_PONDERAL description="Lote Controle Ponderal")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string  strLote description="LOTE" index;
+	attribute date dtDataControle description="DATA DO CONTROLE" index;
+	attribute string  strIdPropriedade description="PROPRIEDADE" index;
+	attribute string strRaca size=100 description="RAÇA" index textualindex;
+	attribute string strLoteDataPropriedade size=200 description="LOTE DATA PROPRIEDADE" textualindex index;
+	attribute string strControlador size=120 description="CONTROLADOR" textualindex index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute boolean vfLiberarLoteMensuracao description="LIBERAR LOTE PARA MENSURAÇÃO" index;
+	attribute set<
+                        struct {
+				attribute  string  FK_CP_strIdAnimal description="ANIMAL" index;
+				attribute  float  CP_decPeso  description="PESO KG" index;
+				attribute  string  CP_strRegimeAlimentar  description="REGIME ALIMENTAR" index;
+				attribute  float  CP_decCe  description="C.E. (C. ESCROTAL) cm" index;
+				attribute  float  CP_decAa  description="A.A. (A. ANTERIOR) cm" index;
+				attribute  float  CP_decAp  description="A.P. (A. POSTERIOR) cm" index;
+				attribute  float  CP_decLg  description="L.G. (L. GARUPA) cm" index;
+				attribute  float  CP_decCg  description="C.G. (C. GARUPA) cm" index;	
+				attribute  float  CP_decCc  description="C.C. (C. CORPORAL) cm" index;
+				attribute  float  CP_decPt  description="P.T. (P. TORÁCICO) cm" index;
+				attribute  string  CP_strCaracterizacaoRacial  description="CARACTERIZAÇÃO RACIAL" index;
+				attribute  string  CP_strClassificacaoUbere  description="CLASSIFICAÇÃO DE ÚBERE" index;
+				attribute date CP_dtDataEntradaControle description="ENTRADA DO CONTROLE" index;
+				attribute date CP_dtDataSaidaControle description="SAÍDA DO CONTROLE" index;
+				attribute boolean CP_vfSairControle description="SAIR DO CONTROLE" index;
+				attribute string CP_strMotivo size=100 description="MOTIVO" index;
+				attribute  string  CP_strCondicaoCriacao  description="CONDIÇÃO DE CRIAÇÃO" index;
+				attribute date CP_dtDataDesmame description="DATA DO DESMAME" index;
+				attribute date CP_dtDataDiagnostico description="DATA DO DIAGNÓSTICO" index;
+				attribute date CP_dtDataParto description="DATA DO PARTO" index;
+				attribute date CP_dtDataEntradaControleLeiteiro description="ENTRADA DO CONTROLE LEITEIRO" index;
+				attribute date CP_dtDataEncerramentoLactacao description="ENCERRAMENTO DA LACTAÇÃO" index;
+				attribute  float  CP_decPesoMaeDesmame  description="PESO MÃE DESMAME KG" index;		
+                        } > Mensuracoes;
+}

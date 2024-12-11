@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteInicio.master.cs" Inherits="FCarnauba_Animais.SiteInicio" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>Sistema de Gestão Pecuária - Fazenda Carnaúba
+    </title>
+    <link href="./Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/geral000.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/reset000.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./Scripts/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript">
+        function setCorrectColor(isGood) {
+            if (isGood) {
+                //$("#notify_panel").css("border-color", "green");
+                $("#notify_panel").css("background-color", "#D6FFD7").css("border-color", "#029956").css("color", "#029956").css("font-size", 18);
+            } else {
+                //$("#notify_panel").css("border-color", "red");
+                $("#notify_panel").css("background-color", "#FFC9C9").css("border-color", "red").css("color", "red").css("font-size", 18);
+            }
+        }
+        $(document).ready(function () {
+            $("body").css("visibility", "visible");
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div id="topo">
+        <div class="conteudo2">
+            
+                <img id="logoGov" src="./img/logoFaze.png">
+            </a>
+            
+                <img id="logoSigePb" src="./img/logoLisa.png">
+            </a>
+        </div>
+    </div>
+    
+    <form id="Form1" runat="server" accept-charset="utf-8">
+            <div class="clear hideSkiplink" 
+                style="position:relative;z-index:100; top: 0px; left: 0px;">
+                <div style="background-color: #FFFFFF">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                        onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <DynamicMenuItemStyle BackColor="Black" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Início" Selected="True">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Gerenciamento de Dados"  Selected="True" NavigateUrl="~/Animais.aspx" Value="Gerenciamento de Dados">
+                            <asp:MenuItem NavigateUrl="~/EstruturasPropriedades.aspx" Text="Informações das Propriedades" Value="Informações das Propriedades"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Animais.aspx" Text="Controle Produtivo" Value="Controle Produtivo">
+                                <asp:MenuItem NavigateUrl="~/Animais.aspx" Text="Animais" Value="Animais"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Lotes.aspx" Text="Controle Leiteiro" Value="Controle Leiteiro"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/LotesPonderais.aspx" Text="Controle Ponderal" Value="Controle Ponderal"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Cdcs.aspx" Text="Cruzamentos" Value="Cruzamentos"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Pluviometrico.aspx" Text="Pluviometria" Value="Pluviometria"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Financeiro.aspx" Text="Financeiro" Value="Financeiro"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Relatórios Gerenciais com Gráficos"  Selected="True" NavigateUrl="~/Inicio.aspx" Value="Relatórios Gerencias com Gráficos">
+                            <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Controle Produtivo" Value="Controle Produtivo">
+                                <asp:MenuItem NavigateUrl="~/RelIndividual.aspx" Text="Individual" Value="Individual">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RTodosIndices.aspx" Text="Indices Zootécnicos dos Rebanhos" Value="Indices Zootécnicos dos Rebanhos">
+                                    <asp:MenuItem NavigateUrl="~/RTodosIndices.aspx" Text="Todos" Value="Todos"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RLotacaoMediaAnual.aspx" Text="Lotação Média Anual" Value="Lotação Média Anual"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaAbate.aspx" Text="Taxa de Abate" Value="Taxa de Abate"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaDesmame.aspx" Text="Taxa de Desmame" Value="Taxa de Desmame"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RRelacaoDesmama.aspx" Text="Relação de Desmama" Value="Relação de Desmama"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaNatalidade.aspx" Text="Taxa de Natalidade" Value="Taxa de Natalidade"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaMortalidade.aspx" Text="Taxa de Mortalidade" Value="Taxa de Mortalidade"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RIndiceFertilidade.aspx" Text="Taxa de Fertilidade" Value="Taxa de Fertilidade"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaMortalidadeIntrauterina.aspx" Text="Taxa de Mortalidade Intrauterina" Value="Taxa de Mortalidade Intrauterina"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaVendas.aspx" Text="Taxa de Vendas/Categoria" Value="Taxa de Vendas/Categoria"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaCrescimentoVegetativo.aspx" Text="Taxa de Crescimento Vegetativo" Value="Taxa de Crescimento Vegetativo"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RTaxaDesfrute.aspx" Text="Taxa de Desfrute" Value="Taxa de Desfrute"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RProducaoCarne.aspx" Text="Produção de Carne" Value="Produção de Carne"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RMatrizesNBezerros.aspx" Text="Matrizes Necessárias para Produzir N Bezerros/Tempo" Value="Matrizes Necessárias para Produzir N Bezerros/Tempo"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RelLoteLeiteiro.aspx" Text="Controle Leiteiro" Value="Controle Leiteiro">
+                                    <asp:MenuItem NavigateUrl="~/RelLoteLeiteiro.aspx" Text="Individual" Value="Individual"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RContLeiteiroEnc.aspx" Text="Controle Leiteiro Rebanho - Encerradas no Ano" Value="Controle Leiteiro Rebanho - Encerradas no Ano"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RPesagensRebanhos.aspx" Text="Rebanhos/Categorias" Value="Rebanhos/Categorias"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RContLeiteiroEncFilhas.aspx" Text="Produção de Leite das Filhas" Value="Produção de Leite das Filhas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RelLotePonderal.aspx" Text="Controle Ponderal" Value="Controle Ponderal">
+                                    <asp:MenuItem NavigateUrl="~/RelLotePonderal.aspx" Text="Individual" Value="Individual"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RPonderalRebanho.aspx" Text="Rebanhos/Categorias" Value="Rebanhos/Categorias"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/RelPluviometricoFaz.aspx" Text="Pluviometria" Value="Pluviometria">
+                                <asp:MenuItem NavigateUrl="~/RelPluviometricoFaz.aspx" Text="Por Fazenda/Tempo" Value="Por Fazenda/Tempo"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RPluviometriaTodas.aspx" Text="Todas as Fazenda/Tempo" Value="Todas as Fazenda/Tempo"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/RelBalancoFinanceiro.aspx" Text="Financeiros" Value="Financeiros">
+                                <asp:MenuItem NavigateUrl="~/RelInvestimento.aspx" Text="Investimentos/Tempo" Value="Investimentos/Tempo"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RelCusto.aspx" Text="Custeio/Tempo" Value="Custeio/Tempo"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RelBalancoFinanceiro.aspx" Text="Balanço Financeiro/Tempo" Value="Balanço Financeiro/Tempo"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/RelLucroFazenda.aspx" Text="Lucro da Fazenda/Tempo" Value="Lucro da Fazenda/Tempo"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Índices Econômicos" Value="Índices Econômicos">
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Cabeça/Tempo" Value="Custeio Cabeça/Tempo">
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Alimentar" Value="Custeio Alimentar"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Desembolso Cabeça/Tempo" Value="Desembolso Cabeça/Tempo"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/RelDespesa.aspx" Text="Despesa/Ha/Ano(Por Fazenda e Total)" Value="Despesa/Ha/Ano(Por Fazenda e Total)">
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Alimentar" Value="Custeio Alimentar"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Total" Value="Custeio Total"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custo KG Leite Produzido/Tempo" Value="Custo KG Leite Produzido/Tempo"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Alimentar" Value="Custeio Alimentar"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Total" Value="Custeio Total"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custo Bezerro Desmamado/Tempo" Value="Custo Bezerro Desmamado/Tempo">
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Alimentar" Value="Custeio Alimentar"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Custeio Total" Value="Custeio Total"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Resultado Gerencial/Ha" Value="Resultado Gerencial/Ha"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Outros" Value="Outros"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Inventario.aspx" Text="Inventário Geral" Value="Inventário Geral" Target="_blank">
+                                <asp:MenuItem NavigateUrl="~/Inventario.aspx" Text="Por Fazenda/Tempo" Value="Por Fazenda/Tempo" Target="_blank"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Todas as Fazenda/Comparativo/Tempo" Value="Todas as Fazenda/Comparativo/Tempo"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Sumários"  Selected="True" NavigateUrl="~/SAnimais.aspx" Value="Sumários">
+                            <asp:MenuItem NavigateUrl="~/SAnimais.aspx" Text="Animais" Value="Animais"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SIEP.aspx" Text="IEP" Value="IEP"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SIPP.aspx" Text="IPP" Value="IPP"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SER.aspx" Text="ER" Value="ER"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SKGIEP.aspx" Text="kg Leite/IEP" Value="kg Leite/IEP"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPDML.aspx" Text="Produção Diária Máxima de Leite" Value="Produção Diária Máxima de Leite"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPAL.aspx" Text="Produção Total de Leite/Lactação" Value="Produção Total de Leite/Lactação"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPALT.aspx" Text="Produção Acumulada de Leite" Value="Produção Acumulada de Leite"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SPL.aspx" Text="Teor de Proteína no Leite" Value="Teor de Proteína no Leite"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SGL.aspx" Text="Teor de Gordura no Leite" Value="Teor de Gordura no Leite"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SRQ.aspx" Text="Rendimento Queijeiro" Value="Rendimento Queijeiro"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SDadosPluviometricos.aspx" Text="Dados Pluviométricos" Value="Dados Pluviométricos"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Índices Econômicos" Value="Índices Econômicos"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Outros" Value="Outros"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/CadastrarDispositivo.aspx" Text="Dispositivos de Automação" Value="Dispositivos de Automação">
+                                <asp:MenuItem NavigateUrl="~/CadastrarDispositivo.aspx" Text="Configuração" Value="Configuração"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CadastrarDispositivo.aspx" Text="Equipamentos Configurados" Value="Equipamentos Configurados"></asp:MenuItem>
+                            </asp:MenuItem> 
+                        <asp:MenuItem Text="Manual do Usuário" Value="Manual do Usuário"  NavigateUrl="~/Docs/manual.pdf" Target="_blank"></asp:MenuItem>
+                        <asp:MenuItem Text="Sobre" Value="Sobre" Target="_blank"></asp:MenuItem>                 
+                        <asp:MenuItem Text="Sair" Value="Sair"  NavigateUrl="~/Account/Login.aspx?op=sair"></asp:MenuItem>    
+                    </Items>
+                    <StaticMenuItemStyle BackColor="Black" BorderColor="Black" />
+                    <StaticSelectedStyle BackColor="Black" BorderColor="Black" />
+                </asp:Menu>
+                </div>
+
+                <%--http://stackoverflow.com/questions/2497886/how-to-make-aspmenu-and-aspdropdownlist-on-one-line--%>
+                <%--<div style="display: inline-block;padding:4px 0px 0px 0px; float:right;">
+                <asp:TextBox ID="txtBusca" runat="server" Width="250"></asp:TextBox>
+                <asp:button ID="btnBuscar" runat="server" Text="Buscar"/>
+                <asp:LinkButton CssClass="link" ForeColor="#bfcbd6" ID="btnBuscaAvancada" runat="server" Text="Busca avançada"></asp:LinkButton>
+                </div>--%>
+            </div>
+            <%--<div class="loginDisplay" style="background-color: transparent">
+                <asp:Label ID="LoginName" runat="server" ForeColor="Black"></asp:Label>
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Bem vindo <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>--%>
+        <asp:Panel ID="NotificationPanel" runat="server" Visible="false">
+            <div id="notify_panel"><img src="img/delete_icon.png" onclick="$('#notify_panel').hide()" alt="Fechar" title="Fechar" />
+                <div>
+                    <asp:Label ID="NotificationLabel" runat="server">Não foi possível cadastrar o lote: Lote inválido.</asp:Label>
+                </div>
+            </div>
+        </asp:Panel>
+        <div class="page">
+            <div class="main">
+                <!--<div id="title_div">-->
+                    <h1>
+                        <asp:Label ID="lblSubTitle" runat="server" Text="" 
+                            ViewStateMode="Enabled"></asp:Label>
+                    </h1>
+                <!--</div>-->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" ViewStateMode="Inherit">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="rodape" style="position: relative">
+            <div>
+                <div class="conteudo" align="center">
+
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

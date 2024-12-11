@@ -1,0 +1,20 @@
+class FCARNAUBA_CDC
+(extent FCARNAUBA_CDC description="Cadastro de Coberturas")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute  long  intCdc  description="NÚMERO DA CDC" index;
+	attribute  string  strTipo  size=20  description="TIPO" index textualindex;
+	attribute date dtDataCobertura description="DATA DAS COBERTURAS" index;
+	attribute  string  FK_strIdTouro description="RGD DO TOURO " index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute string strVeterinario size=120 description="VETERINÁRIO" textualindex index;
+	attribute string strRaca size=100 description="RAÇA" index textualindex;
+	attribute string strIdPropriedade description="PROPRIEDADE" index;
+	attribute set<
+                        struct {
+				attribute string  MAT_FK_strIdMatriz description="RGD DA MATRIZ " index;
+				attribute boolean MAT_vfCoberturaEfetiva description="COBERTURA EFETIVA" index;
+                        } > Matrizes;			
+}

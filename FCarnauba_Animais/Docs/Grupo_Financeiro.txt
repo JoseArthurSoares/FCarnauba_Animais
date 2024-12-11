@@ -1,0 +1,12 @@
+class FCARNAUBA_GRUPO_FINANCEIRO
+(extent FCARNAUBA_GRUPO_FINANCEIRO description="Grupo Financeiro")
+{
+	attribute autoincrement kintID_Grupo description="ID GRUPO" index;
+	attribute string  diretorio  size=255  description="DIRETÓRIO" index;
+	attribute  long  FK_intID_Grupo_Sup  description="ID GRUPO SUP" index;
+	attribute string strIds_Grupo_Sup size=255 description="IDS GRUPO SUP" textualindex index;
+	attribute string strDescricao_Grupo size=255 description="DESCRIÇÃO DO GRUPO" textualindex index;
+	attribute  long  intEntradaDesembolso  description="ENTRADA OU DESEMBOLSO" index;
+	attribute  string  strOrdem  description="ORDEM STR" index;
+	attribute boolean vfEhUltimoNoh description="É ÚLTIMO NÓ?" index;
+}

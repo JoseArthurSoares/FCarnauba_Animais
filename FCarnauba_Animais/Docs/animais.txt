@@ -1,0 +1,117 @@
+class FCARNAUBA_ANIMAIS
+(extent FCARNAUBA_ANIMAIS description="Registro de Animais")
+{
+	attribute autoincrement id description="id" index;
+	attribute  string  diretorio  size=255  description="diretorio" index;
+	attribute  long intNumeroOrdem description="NÚMERO DE ORDEM" index;
+	attribute string strNomeFazenda size=120 description="IDENTIFICAÇÃO DA PROPRIEDADE" textualindex index;
+	attribute string strNome size=120 description="NOME" textualindex index;
+	attribute string strNomeCompleto size=200 description="NOME COMPLETO" textualindex index;
+	attribute  string  strSexo  size=10  description="SEXO" index textualindex;
+	attribute  string  strRgn description="REGISTRO DE NASCIMENTO (RGN)" index;
+	attribute date dtDataNascimento description="DATA DE NASCIMENTO" index;
+	attribute  string  strPaiRgd  size=20  description="IDENTIFICAÇÃO DO PAI" index;
+	attribute string strNomePai size=120 description="NOME DO PAI" textualindex index;
+	attribute  string  strMaeRgd  size=20  description="IDENTIFICAÇÃO DA MÃE" index;
+	attribute string strNomeMae size=120 description="NOME DA MÃE" textualindex index;
+	attribute  string  strRgd	 description="REGISTRO DEFINITIVO (RGD)" index;
+	attribute string strRaca size=100 description="RAÇA" index textualindex;
+	attribute boolean vfCria description="CRIA" index;
+	attribute  float  decPn  description="PESO AO NASCER KG" index;
+	attribute  long  intIppIep  description="IPP - INTERVALO PRIMEIRO PARTO" index;
+	attribute  long  intIep  description="IEP - INTERVALO ENTRE PARTOS" index;
+	attribute  float  decKgIep  description="Kg/IEP" index;
+	attribute  long  intEr  description="ER - EFICIÊNCIA REPRODUTIVA" index;
+	attribute  string  strLaudoDna  size=255  description="LAUDO DNA" index;
+	attribute  long  intCdnOrigem	 description="CDN - COMUNICAÇÃO DE NASCIMENTO" index;
+	attribute  long  intCdcOrigem	 description="CDC - COMUNICAÇÃO DE COBRIÇÃO" index;
+	attribute  string  strNasceuDe  size=20  description="NASCEU DE" index textualindex;
+	attribute  document  docObservacoes  description="OBSERVAÇÕES" textualindex;
+	attribute  string  strFoto  size=255  description="FOTO" index;
+	attribute date dtDataUltimoParto description="DATA DO ÚLTIMO PARTO" index;
+	attribute  string  strRgdSerie	 description="RGD SÉRIE" index;
+	attribute  long  intRgdNumero  description="RGD NÚMERO" index;
+	attribute  string  strRgnSerie	 description="RGN SÉRIE" index;
+	attribute  long  intRgnNumero  description="RGN NÚMERO" index;
+	attribute  string  strId description="ID STR" index;
+	attribute  string  strPaiId  description="IDENTIFICAÇÃO DO PAI " index;
+	attribute  string  strMaeId  description="IDENTIFICAÇÃO DA MÃE " index;
+	attribute date dtDataCdc description="DATA CDC" index;
+	attribute  string  strCria  size=20  description="Nº CRIA" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute  float  decEr  description="ER - EFICIÊNCIA REPRODUTIVA " index;
+	attribute  float  decIppMedio  description="IPP MÉDIO" index;
+	attribute  float  decIepMedio  description="IEP MÉDIO" index;
+	attribute  string  strRgdNumero	 description="RGD NÚMERO " index;
+	attribute  string  strRgnNumero	 description="RGN NÚMERO " index;
+	attribute  string  strRgnRaca description="REGISTRO DE NASCIMENTO (RGN) RAÇA" index unique;
+	attribute  string  strRgdRaca description="REGISTRO DEFINITIVO (RGD) RAÇA" index unique;
+	attribute boolean vfFiv description="FIV" index;
+	attribute string  strReceptoraId  description="RECEPTORA" index;
+	attribute boolean vfControleLeiteiro description="EM CONTROLE LEITEIRO" index;
+	attribute date dtDataControleLeiteiro description="DATA CONTROLE LEITEIRO" index;
+	attribute  string  strLaudoBetaCaseina  size=255  description="LAUDO BETA CASEÍNA" index;
+	attribute  string  strTipoBetaCaseina	 description="TIPO BETA CASEÍNA" index;
+	attribute  string  strLaudoKappaCaseina  size=255  description="LAUDO KAPPA CASEÍNA" index;
+	attribute  string  strTipoKappaCaseina	 description="TIPO KAPPA CASEÍNA" index;
+	attribute string strTemperamento size=30 description="TEMPERAMENTO" index textualindex;
+	attribute boolean vfLaudoDna description="TEM LAUDO DNA" index;
+	attribute  string  strLaudoDna2  size=255  description="LAUDO DNA 2" index;
+	attribute boolean vfLaudoArquivoPermanente description="TEM LAUDO ARQUIVO PERMANENTE" index;
+	attribute  string  strLaudoDna3  size=255  description="LAUDO DNA 3" index;
+	attribute boolean vfLaudoSecundario1 description="TEM LAUDO SECUNDÁRIO 1" index;
+	attribute  string  strLaudoDna4  size=255  description="LAUDO DNA 4" index;
+	attribute boolean vfLaudoSecundario2 description="TEM LAUDO SECUNDÁRIO 2" index;
+	attribute boolean vfLaudoBetaCaseina description="TEM LAUDO BETA CASEÍNA" index;
+	attribute boolean vfLaudoKappaCaseina description="TEM LAUDO KAPPA CASEÍNA" index;
+	attribute boolean vfRgd description="TEM RGD" index;
+	attribute boolean vfRgn description="TEM RGN" index;
+	attribute  string  strTipoParto  size=20  description="TIPO DE PARTO" index;
+	attribute  string  strVigorBez  size=10  description="VIGOR DO BEZERRO" index;
+	attribute  string  strEstadoCorporalMae  size=10  description="ESTADO CORPORAL DA MÃE" index;
+	attribute  string  strTamanhoTeta  size=1  description="TAMANHO DA TETA" index;
+	attribute  string  strMaeBoaLeite  size=10  description="MÃE BOA DE LEITE" index;
+	attribute boolean vfMaeOrdenhada description="MÃE ORDENHADA" index;
+	attribute boolean vfAnimalImprodutivo description="MÃE ORDENHADA" index;
+	attribute set<
+                        struct {
+                                attribute  string  MA_strMovimento  size=20  description="MOVIMENTO" index textualindex;
+                                attribute string MA_strNomeQAQ size=200 description="NOME " textualindex index;
+				attribute date MA_dtDataManejo description="DATA " index;
+				attribute  document  MA_docObservacao  description="OBSERVAÇÃO" textualindex;					
+                        } > Historico;
+	attribute set<
+                        struct {
+                                attribute date CP_dtDataPesagem description="DATA  " index;
+				attribute  float  CP_decPesoFinal  description="PESO KG" index;
+				attribute  string  CP_strRegimeAlimentar  description="REGIME ALIMENTAR" index;
+				attribute  float  CP_decCe  description="C.E. (C. ESCROTAL) cm" index;
+				attribute  float  CP_decAa  description="A.A. (A. ANTERIOR) cm" index;
+				attribute  float  CP_decAp  description="A.P. (A. POSTERIOR) cm" index;
+				attribute  float  CP_decLg  description="L.G. (L. GARUPA) cm" index;
+				attribute  float  CP_decCg  description="C.G. (C. GARUPA) cm" index;	
+				attribute  float  CP_decCc  description="C.C. (C. CORPORAL) cm" index;
+				attribute  float  CP_decPt  description="P.T. (P. TORÁCICO) cm" index;
+				attribute  string  CP_strCaracterizacaoRacial  description="CARACTERIZAÇÃO RACIAL" index;
+				attribute  string  CP_strClassificacaoUbere  description="CLASSIFICAÇÃO DE ÚBERE" index;
+                        } > Mensuracoes;
+	attribute set<
+                        struct {
+				attribute  long  CRC_intCdc  description="CDC - COMUNICAÇÃO DE COBRIÇÃO" index;
+				attribute date CRC_dtDataCobertura description="DATA DE COBERTURA" index;
+				attribute date CRC_dtDataParto description="DATA DO PARTO" index;
+				attribute  string  CRC_strRgdTouro  description="RGD DO TOURO" index;
+				attribute string CRC_strNomeTouro size=120 description="NOME DO TOURO" textualindex index;
+				attribute  string  CRC_strRgCria  description="RG DA CRIA" index;
+				attribute string CRC_strNomeCria size=120 description="NOME DA CRIA" textualindex index;			
+                        } > ListaDeCobertura;
+	attribute set<
+                        struct {
+				attribute  string  CRD_strForma  size=20  description="TIPO" index textualindex;
+				attribute date CRD_dtData description="DATA" index;
+				attribute float CRD_decQuantidade description="QUANTIDADE" index;
+				attribute string CRD_strVeterinario size=120 description="VETERINÁRIO" textualindex index;
+				attribute string  CRD_strNumeroReceptora description="NÚMERO DA RECEPTORA" index;
+                        } > Biotecnologia;
+}

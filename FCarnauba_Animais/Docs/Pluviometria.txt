@@ -1,0 +1,12 @@
+class FCARNAUBA_CONT_PLUVIOMETRICO
+(extent FCARNAUBA_CONT_PLUVIOMETRICO description="Controle Pluviométrico")
+{
+	attribute autoincrement id description="id" index;
+	attribute  string  diretorio  size=255  description="diretorio" index;	
+	attribute date dtData description="DATA" index;
+	attribute  float  decPluviometria  description="PLUVIOMETRIA" index;
+	attribute string FK_IdPropriedade description="PROPRIEDADE" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute  string  strPluviometro description="PLUVIÔMETRO" index;	
+}

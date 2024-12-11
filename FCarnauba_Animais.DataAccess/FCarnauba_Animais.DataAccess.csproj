@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FCarnauba_Animais.DataAccess</RootNamespace>
+    <AssemblyName>FCarnauba_Animais.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LightInfocon.Data.LightBaseProvider, Version=4.4.1.0, Culture=neutral, PublicKeyToken=3016ddb54c1a70d5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\LightInfocon\LightBaseDataProvider\LightInfocon.Data.LightBaseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInfocon.GoldenAccess.General">
+      <HintPath>C:\Program Files (x86)\LightInfocon\GoldenAccess\Server\LightInfocon.GoldenAccess.General.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInfocon.GoldenAccess.Web.UI">
+      <HintPath>C:\Program Files (x86)\LightInfocon\GoldenAccess\Web\LightInfocon.GoldenAccess.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agricultura.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Arquivo.cs" />
+    <Compile Include="Arrendamento.cs" />
+    <Compile Include="Benfeitoria.cs" />
+    <Compile Include="Cdc.cs" />
+    <Compile Include="CentroCusto.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Compra.cs" />
+    <Compile Include="ControleLeiteiro.cs" />
+    <Compile Include="ControlePluviometrico.cs" />
+    <Compile Include="CriterioPesquisa.cs" />
+    <Compile Include="CriterioPesquisaAnimal.cs" />
+    <Compile Include="CriterioPesquisaCompras.cs" />
+    <Compile Include="CriterioPesquisaDocumentos.cs" />
+    <Compile Include="CriterioPesquisaEmpresa.cs" />
+    <Compile Include="CriterioPesquisaFinanceiro.cs" />
+    <Compile Include="CriterioPesquisaParcelas.cs" />
+    <Compile Include="CriterioPesquisaPesagensLeite.cs" />
+    <Compile Include="CriterioPesquisaVendas.cs" />
+    <Compile Include="Documento.cs" />
+    <Compile Include="Empresa.cs" />
+    <Compile Include="EstruturaPropriedade.cs" />
+    <Compile Include="FCarnaubaDataAccess.cs" />
+    <Compile Include="FCarnaubaFacade.cs" />
+    <Compile Include="FCarnaubaSettings.cs" />
+    <Compile Include="FluxoCaixa.cs" />
+    <Compile Include="GrupoFinanceiro.cs" />
+    <Compile Include="Historico.cs" />
+    <Compile Include="IbgeMun.cs" />
+    <Compile Include="IndicesZootecnicos.cs" />
+    <Compile Include="IndiceZootecnico.cs" />
+    <Compile Include="InformacoesFinanceiras.cs" />
+    <Compile Include="InformacoesGerais.cs" />
+    <Compile Include="InformacoesRebanho.cs" />
+    <Compile Include="ItemDescFinanceiro.cs" />
+    <Compile Include="ItemFinanceiro.cs" />
+    <Compile Include="ListaDeCobertura.cs" />
+    <Compile Include="Lote.cs" />
+    <Compile Include="LotePonderal.cs" />
+    <Compile Include="Matriz.cs" />
+    <Compile Include="Mensuracao.cs" />
+    <Compile Include="Noh.cs" />
+    <Compile Include="Outra.cs" />
+    <Compile Include="PageType.cs" />
+    <Compile Include="ParametrosDeBuscaEmAnimais.cs" />
+    <Compile Include="ParametrosDeBuscaEmCdc.cs" />
+    <Compile Include="ParametrosDeBuscaEmControleLeiteiro.cs" />
+    <Compile Include="ParametrosDeBuscaEmControlePluviometrico.cs" />
+    <Compile Include="ParametrosDeBuscaEmEstruturaPropriedades.cs" />
+    <Compile Include="ParametrosDeBuscaEmFluxoCaixa.cs" />
+    <Compile Include="ParametrosDeBuscaEmLotes.cs" />
+    <Compile Include="ParametrosDeBuscaEmLotesPonderais.cs" />
+    <Compile Include="Parcela.cs" />
+    <Compile Include="Pastagem.cs" />
+    <Compile Include="Producao.cs" />
+    <Compile Include="ProducaoLeite.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propriedade.cs" />
+    <Compile Include="RAnimaisAno.cs" />
+    <Compile Include="RAnimaisLactacaoAno.cs" />
+    <Compile Include="RAnimaisProducaoLeite.cs" />
+    <Compile Include="RControleLeiteiro.cs" />
+    <Compile Include="RCria.cs" />
+    <Compile Include="ResultadoBuscaAnimal.cs" />
+    <Compile Include="ResultadoBuscaCdc.cs" />
+    <Compile Include="ResultadoBuscaControlePluviometrico.cs" />
+    <Compile Include="ResultadoBuscaEstruturaPropriedade.cs" />
+    <Compile Include="ResultadoBuscaFluxoCaixa.cs" />
+    <Compile Include="ResultadoBuscaLote.cs" />
+    <Compile Include="ResultadoBuscaLotePonderal.cs" />
+    <Compile Include="RItemFinanceiro.cs" />
+    <Compile Include="RLoteControleLeiteiro.cs" />
+    <Compile Include="RLoteControlePonderal.cs" />
+    <Compile Include="RMachoFemea.cs" />
+    <Compile Include="RMensuracao.cs" />
+    <Compile Include="RPeso.cs" />
+    <Compile Include="RPluviometria.cs" />
+    <Compile Include="RProducaoLeite.cs" />
+    <Compile Include="RProducaoReal.cs" />
+    <Compile Include="RRankingFilhos.cs" />
+    <Compile Include="RRankingIppIepEr.cs" />
+    <Compile Include="RRankingPeso.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="Venda.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Animal.datasource" />
+    <None Include="Properties\DataSources\RProducaoLeite.datasource" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

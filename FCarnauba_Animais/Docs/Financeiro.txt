@@ -1,0 +1,44 @@
+class FCARNAUBA_FINANCEIRO
+(extent FCARNAUBA_FINANCEIRO description="Financeiro")
+{
+	attribute autoincrement id description="id" index;
+	attribute string  diretorio  size=255  description="diretorio" index;
+	attribute string strDescricao size=255 description="DESCRIÇÃO" textualindex index;
+	attribute  long  FK_intID_Grupo  description="ID GRUPO FINANCEIRO" index;
+	attribute  long  FK_IdPropriedade  description="ID PROPRIEDADE" index;
+	attribute  long  intQuantidade  description="QUANTIDADE" index;
+	attribute  float  moeValorUnitario  description="VALOR UNITÁRIO" index;
+	attribute  float  moeValorTotal  description="VALOR TOTAL" index;
+	attribute date dtDataCadastro description="DATA CADASTRO" index;
+	attribute string strUsuario size=120 description="USUÁRIO" textualindex index;
+	attribute date dtDataUsuario description="DATA USUÁRIO" index;
+	attribute date dtData description="DATA" index;	
+	attribute string strDocumento size=30 description="DOCUMENTO" index;
+	attribute  long  FK_IdEmpresa  description="ID EMPRESA" index;
+	attribute string strPropriedadeComp size=10 description="PROPRIEDADE COMP" textualindex index;
+	attribute string strFormaPagamento  size=20  description="FORMA DE PAGAMENTO" index;
+	attribute string strUsuarioValidacao size=120 description="USUÁRIO VALIDAÇÃO" textualindex index;
+	attribute date dtDataUsuarioValidacao description="DATA USUÁRIO VALIDAÇÃO" index;
+	attribute boolean vfVendaAnimais description="VENDA DE ANIMAIS" index;
+	attribute set<
+                        struct {
+                                attribute string  COM_strEvento  size=100  description="EVENTO" index textualindex;
+				attribute string  FK_COM_strIdAnimal description="ANIMAL" index;
+				attribute document  COM_docDescricao  description="DESCRIÇÃO" textualindex;
+				attribute  float  COM_moeValor  description="VALOR" index;					
+                        } > Compras;
+	attribute set<
+                        struct {
+                                attribute string  DOC_strDescricao  size=255  description="DESCRIÇÃO " index textualindex;
+				attribute date DOC_dtDataAnexo description="DATA DO ANEXO" index;
+				attribute string DOC_strPDFDocumento size=255 description="PDF Documento" index;					
+                        } > Documentos;
+	attribute set<
+                        struct {
+				attribute  long  PAR_intNParcela  description="Nº PARCELA" index;
+                                attribute date PAR_dtDataParcela description="DATA DA PARCELA" index;
+				attribute  float  PAR_moeValorInicial description="VALOR INICIAL" index;
+				attribute  float  PAR_moeValorPago description="VALOR PAGO" index;
+				attribute date PAR_dtDataPagamento description="DATA DO PAGAMENTO" index;				
+                        } > Parcelas;
+}

@@ -1,0 +1,109 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace FCarnauba_Animais.DataAccess
+{
+    public class PageType { }
+    public class LoggedInRestriction : PageType { }
+
+    public class AnimaisType : LoggedInRestriction { }
+    public class PluviometriaType : LoggedInRestriction { }
+    public class RelatoriosControleLeiteiroType : LoggedInRestriction { }
+    public class LotesType : LoggedInRestriction { }
+    public class CdcsType : LoggedInRestriction { }
+    public class DetalhesLoteType : LoggedInRestriction { }
+    public class EditaMatrizType : LoggedInRestriction { }
+    public class CadastrarLoteType : LoggedInRestriction { }
+    public class DetalhesControleLeiteiroType : LoggedInRestriction { }
+    public class EditaControleLeiteiroType : LoggedInRestriction { }
+    public class EditaProducaoLeiteType : LoggedInRestriction { }
+    public class DetalhesProducaoLeiteType : LoggedInRestriction { }
+    public class RelatoriosPluviometriaType : LoggedInRestriction { }
+    public class DetalhesControlePluviometricoType : LoggedInRestriction { }
+    public class CadastrarControlePluviometricoType : LoggedInRestriction { }
+    public class DetalhesCdcType : LoggedInRestriction { }
+    public class CadastrarCdcType : LoggedInRestriction { }
+    public class DetalhesCdcMatrizType : LoggedInRestriction { }
+    public class EditaCdcMatrizType : LoggedInRestriction { }
+    public class FluxosCaixaType : LoggedInRestriction { }
+    public class DetalhesFluxoCaixaType : LoggedInRestriction { }
+    public class CadastrarFluxoCaixaType : LoggedInRestriction { }
+    public class RelatoriosFluxoCaixaType : LoggedInRestriction { }
+    public class LotesPonderaisType : LoggedInRestriction { }
+    public class DetalhesLotePonderalType : LoggedInRestriction { }
+    public class CadastrarLotePonderalType : LoggedInRestriction { }
+    public class EditaMensuracaoType : LoggedInRestriction { }
+    public class DetalhesMensuracaoType : LoggedInRestriction { }
+    public class CadastrarEstruturaPropriedadeType : LoggedInRestriction { }
+    public class EditaPastagemType : LoggedInRestriction { }
+    public class DetalhesEstruturaPropriedadeType : LoggedInRestriction { }
+    public class EditaAgriculturaType : LoggedInRestriction { }
+    public class RLotacaoMediaAnualType : LoggedInRestriction { }
+    public class RIndiceFertilidadeType : LoggedInRestriction { }
+    public class RTaxaNatalidadeType : LoggedInRestriction { }
+    public class RTaxaMortalidadeIntrauterinaType : LoggedInRestriction { }
+    public class RTaxaDesmameType : LoggedInRestriction { }
+    public class RTodosIndicesType : LoggedInRestriction { }
+    public class SAnimaisType : LoggedInRestriction { }
+    public class SIPPType : LoggedInRestriction { }
+    public class SIEPType : LoggedInRestriction { }
+    public class SERType : LoggedInRestriction { }
+    public class RContLeiteiroEncType : LoggedInRestriction { }
+    public class SPDMLType : LoggedInRestriction { }
+    public class SPALType : LoggedInRestriction { }
+    public class SDadosPluviometricosType : LoggedInRestriction { }
+    public class SKGIEPType : LoggedInRestriction { }
+    public class SPALTType : LoggedInRestriction { }
+    public class SGLType : LoggedInRestriction { }
+    public class SPLType : LoggedInRestriction { }
+    public class SRQType : LoggedInRestriction { }
+    public class FinanceiroType : LoggedInRestriction { }
+    public class RelatoriosFinanceiroType : LoggedInRestriction { }
+    public class EmpresasType : LoggedInRestriction { }
+    public class GraficoCusteiosType : LoggedInRestriction { }
+    public class GraficoCustosFixosType : LoggedInRestriction { }
+    public class GraficoCustosVariaveisType : LoggedInRestriction { }
+    public class GraficoBalancoFinanceiroType : LoggedInRestriction { }
+    public class GraficoCusteioTotalXInvestimentosType : LoggedInRestriction { }
+    public class RelatoriosFinanceiroCompletoType : LoggedInRestriction { }
+    public class PluviometricoType : LoggedInRestriction { }
+    public class DetalhesFinanceiroType : LoggedInRestriction { }
+    public class RelatoriosControlePonderalType : LoggedInRestriction { }
+    public class GraficoPluviometriaDetType : LoggedInRestriction { }
+    public class InventarioType : LoggedInRestriction { }
+    public class RelatoriosVendasAnimaisType : LoggedInRestriction { }
+    public class RelPluviometricoFazType : LoggedInRestriction { }
+    public class RelBalancoFinanceiroType : LoggedInRestriction { }
+    public class RelLoteLeiteiroType : LoggedInRestriction { }
+    public class RelLotePonderalType : LoggedInRestriction { }
+    public class RelIndividualType : LoggedInRestriction { }
+    public class RelInvestimentoType : LoggedInRestriction { }
+    public class RelCustoType : LoggedInRestriction { }
+    public class RTaxaVendasType : LoggedInRestriction { }
+    public class RTaxaMortalidadeType : LoggedInRestriction { }
+    public class RPluviometriaTodasType : LoggedInRestriction { }
+    public class RelLucroFazendaType : LoggedInRestriction { }
+    public class EditaBenfeitoriaType : LoggedInRestriction { }
+    public class EditaArrendamentoType : LoggedInRestriction { }
+    public class EditaOutraType : LoggedInRestriction { }
+    public class RRelacaoDesmamaType : LoggedInRestriction { }
+    public class RPonderalRebanhoType : LoggedInRestriction { }
+    public class RPesagensRebanhosType : LoggedInRestriction { }
+    public class RelDespesaType : LoggedInRestriction { }
+    public class RTaxaCrescimentoVegetativoType : LoggedInRestriction { }
+    public class DetalhesAnimalType : LoggedInRestriction { }
+    public class CadastrarAnimalType : LoggedInRestriction { }
+    public class EditaHistoricoType : LoggedInRestriction { }
+    public class EditaMensuracaoAnimalType : LoggedInRestriction { }
+    public class DetalhesMensuracaoAnimalType : LoggedInRestriction { }
+    public class PrincipalType : LoggedInRestriction { }
+    public class LeiteiroType : LoggedInRestriction { }
+    public class PonderalType : LoggedInRestriction { }
+    public class RTaxaAbateType : LoggedInRestriction { }
+    public class RTaxaDesfruteType : LoggedInRestriction { }
+    public class RProducaoCarneType : LoggedInRestriction { }
+    public class RMatrizesNBezerrosType : LoggedInRestriction { }
+    public class RContLeiteiroEncFilhasType : LoggedInRestriction { }
+}

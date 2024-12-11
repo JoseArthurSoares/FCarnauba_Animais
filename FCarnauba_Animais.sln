@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCarnauba_Animais", "FCarnauba_Animais\FCarnauba_Animais.csproj", "{027F5C89-A050-42E5-97F3-BA2166F4ED67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCarnauba_Animais.DataAccess", "FCarnauba_Animais.DataAccess\FCarnauba_Animais.DataAccess.csproj", "{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCarnauba_Animais_WebMobile", "FCarnauba_Animais_WebMobile\FCarnauba_Animais_WebMobile.csproj", "{A689F287-B94D-4AD6-AFAA-84E4991F1705}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027F5C89-A050-42E5-97F3-BA2166F4ED67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027F5C89-A050-42E5-97F3-BA2166F4ED67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027F5C89-A050-42E5-97F3-BA2166F4ED67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027F5C89-A050-42E5-97F3-BA2166F4ED67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A502A7-6FC7-4891-AC41-DB32EC7E93C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A689F287-B94D-4AD6-AFAA-84E4991F1705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A689F287-B94D-4AD6-AFAA-84E4991F1705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A689F287-B94D-4AD6-AFAA-84E4991F1705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A689F287-B94D-4AD6-AFAA-84E4991F1705}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
