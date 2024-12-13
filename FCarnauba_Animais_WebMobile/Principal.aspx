@@ -26,6 +26,10 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
         }
 
         .header img {
@@ -104,26 +108,34 @@
             font-style: normal;
         }
         
-        .header-logout {
-          display: flex;
-          align-items: center;
+         .header-logout {
+            display: flex;
+            align-items: center; 
+            gap: 8px; 
+            color: white; 
+            font-size: 16px; 
+            line-height: 1; 
         }
 
         .header-logout img {
-          margin-right: 10px;
-          width: 24px;
-          height: 24px;
+            height: 24px; 
+            width: auto;
+            display: block; 
         }
 
-        .logout {
-          padding: 5px 10px;
-          cursor: pointer;
+        .header-logout span {
+            display: flex;
+            align-items: center;
+            line-height: 1;
         }
+        
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="../img/sgp2.png" alt="Logo da Fazenda">
+        <a href="https://fazendacarnauba.com/">
+            <img src="../img/sgp2.png" alt="Logo da Fazenda">
+        </a>
         <div class="header-logout">
           <img src="../img/sair.png" alt="Logo">
           <p>Sair</p>
