@@ -13,18 +13,72 @@
     }
 </script>
 
-<link rel="stylesheet" type="text/css" href="../Styles/SiteMobile.css" />
-<link rel="stylesheet" type="text/css" href="../Styles/Site.css" />
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />    
+<link rel="stylesheet" type="text/css" href="../Styles/SiteMobile.css" /> 
 <head id="Head1" runat="server">
     <title>SGP - Login</title>
     <link rel="icon" type="image/png" href="img/favicon-1.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Delius&display=swap');
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            background-color: #002855;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .header img {
+            width: 343px;
+            height: 96px;
+        }
+        
+         footer {
+            background-color: #002855;
+            color: #fff;
+            text-align: center;
+            padding: 35px;
+            position: fixed;
+            width: 100%;
+            height: 111px;
+            bottom: 0;
+        }
+
+        footer img {
+            height: 30px;
+            margin-left: 10px;
+        }
+        
+        footer span
+        {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+    </style>
 </head>
-<div style="background-color:#052B5C" align="left"><a href="https://fazendacarnauba.com/" title="Portal Fazenda Carnaúba"><img src="../img/sgp.png"></a></div>
 <body>
     <form id="form1" runat="server">
+    <div class="header">
+        <a href="https://fazendacarnauba.com/">
+            <img src="../img/sgp2.png" alt="Logo da Fazenda">
+        </a>
+    </div>
     <div>
     <table class="label1" border="0" width="100%">
 	<tr>
@@ -65,10 +119,10 @@
 		<td align="center">
 			<table>
 				<tr>
-					<td align="right">
+					<td align="right" class="textUser">
                         <asp:Button ID="btnEnviar" runat="server" Text="Entrar" 
                             onclick="btnEnviar_Click" /></td>
-					<td align="left"><asp:Button ID="btnLimpar" runat="server" Text="Limpar" 
+					<td align="left" class="textPass"><asp:Button ID="btnLimpar" runat="server" Text="Limpar" 
                             onclick="btnLimpar_Click" /></td>
 				</tr>
 			</table>
@@ -77,6 +131,12 @@
 	</tr>
 	</table>
     </div>
+
+    <footer>
+        <span>&copy; 2024 - Todos os direitos reservados.</span>
+        <img src="../img/logo_lightbase.png" alt="Logo da Lightbase">
+    </footer>
+
     </form>
 </body>
 </html>
