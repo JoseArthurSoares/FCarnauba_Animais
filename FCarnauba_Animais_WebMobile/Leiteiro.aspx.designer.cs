@@ -7,20 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FCarnauba_Animais_WebMobile {
-    
-    
-    public partial class Leiteiro {
-        
-        /// <summary>
-        /// Head1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
-        
+namespace FCarnauba_Animais_WebMobile
+{
+
+
+    public partial class Leiteiro
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +22,7 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ScriptManager1 control.
         /// </summary>
@@ -38,7 +31,7 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
+
         /// <summary>
         /// ddlLoteData control.
         /// </summary>
@@ -47,7 +40,7 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlLoteData;
-        
+
         /// <summary>
         /// gvPesagensLeite control.
         /// </summary>
@@ -56,16 +49,7 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvPesagensLeite;
-        
-        /// <summary>
-        /// pesagensLeiteDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource pesagensLeiteDataSource;
-        
+
         /// <summary>
         /// btnInicio control.
         /// </summary>
@@ -74,7 +58,7 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnInicio;
-        
+
         /// <summary>
         /// btnEncerrar control.
         /// </summary>
@@ -83,5 +67,14 @@ namespace FCarnauba_Animais_WebMobile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEncerrar;
+
+        /// <summary>
+        /// pesagensLeiteDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource pesagensLeiteDataSource;
     }
 }
