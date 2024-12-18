@@ -39,10 +39,10 @@
             height: 96px;
         }
 
-        .header-logout {
+       .header-logout {
             display: flex;
             align-items: center; 
-            gap: 8px; 
+            gap: 3px; 
             color: white; 
             font-size: 16px; 
             line-height: 1; 
@@ -58,6 +58,11 @@
             display: flex;
             align-items: center;
             line-height: 1;
+            
+        }
+        .header-logout p
+        {
+            margin-top:13px;
         }
 
         .container-leiteiro {
@@ -134,7 +139,7 @@
             color: #fff;
             text-align: center;
             padding: 35px;
-            position: page;
+           position: absolute;
             width: 100%;
             height: 111px;
             bottom: 0;
@@ -294,7 +299,7 @@
 
     <footer>
         <span>&copy; 2024 - Todos os direitos reservados.</span>
-        <img src="../img/logo_lightbase.png" alt="Logo da Lightbase">
+        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
     </footer>
 
     <asp:ObjectDataSource ID="pesagensLeiteDataSource" runat="server" 

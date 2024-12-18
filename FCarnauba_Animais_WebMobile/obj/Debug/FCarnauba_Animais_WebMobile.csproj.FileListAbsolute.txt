@@ -42,10 +42,4 @@ C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\Newtonsoft.Json.xml
 C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnauba_Animais_WebMobile.dll
 C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnauba_Animais_WebMobile.pdb
 C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\LightInfocon.Data.LightBaseProvider.dll
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\Microsoft.ReportViewer.WebForms.dll
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\Interop.LBCOMLib.dll
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\Microsoft.ReportViewer.Common.dll
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\bin\stdole.dll
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnauba_Animais_WebMobile.csproj.AssemblyReference.cache
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnauba_Animais_WebMobile.csproj.CoreCompileInputs.cache
-C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnaub.3A3D062F.Up2Date
+C:\FCarnauba_Animais\FCarnauba_Animais_WebMobile\obj\Debug\FCarnauba_Animais_WebMobile.csprojResolveAssemblyReference.cache

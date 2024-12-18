@@ -42,12 +42,6 @@ C:\FCarnauba_Animais\FCarnauba_Animais\bin\Newtonsoft.Json.xml
 C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnauba_Animais.dll
 C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnauba_Animais.pdb
 C:\FCarnauba_Animais\FCarnauba_Animais\bin\LightInfocon.Data.LightBaseProvider.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\Microsoft.ReportViewer.Common.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\Microsoft.ReportViewer.DataVisualization.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\Microsoft.ReportViewer.WebForms.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\Interop.LBCOMLib.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\bin\stdole.dll
-C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnauba_Animais.csproj.AssemblyReference.cache
-C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnauba_Animais.csproj.CoreCompileInputs.cache
-C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnaub.8CE06EC0.Up2Date
+C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\FCarnauba_Animais.csprojResolveAssemblyReference.cache
+C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\RdlCompile.cache
+C:\FCarnauba_Animais\FCarnauba_Animais\obj\Debug\RdlCompile.compiled

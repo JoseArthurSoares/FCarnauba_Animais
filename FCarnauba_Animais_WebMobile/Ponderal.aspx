@@ -17,18 +17,177 @@
 <link rel="stylesheet" type="text/css" href="./Styles/smoothness.css" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" /> 
 <head id="Head1">
+
     <title>SGP - Ponderal</title>
     <link rel="icon" type="image/png" href="img/favicon-1.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
-<div style="background-color:#052B5C" align="left"><a href="https://fazendacarnauba.com/" title="Portal Fazenda Carnaúba"><img src="./img/sgp.png"></a></div>
+
 <head id="Head1" runat="server">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Delius&display=swap');
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #002855;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            height: 115px;
+        }
+
+        .header img {
+            width: 320px;
+            height: 75px;
+        }
+
+        .header-logout {
+            display: flex;
+            align-items: center; 
+            gap: 3px; 
+            color: white; 
+            font-size: 16px; 
+            line-height: 1; 
+        }
+
+        .header-logout img {
+            height: 24px; 
+            width: auto;
+            display: block; 
+        }
+
+        .header-logout span {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            
+        }
+        .header-logout p
+        {
+            margin-top:13px;
+        }
+
+        .container-leiteiro {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .lote-selector {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .grid-pesagens {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .grid-pesagens th, .grid-pesagens td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-pesagens th {
+            background-color: #002855;
+            color: white;
+        }
+
+        .grid-pesagens tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .grid-pesagens .edit-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .grid-pesagens .edit-buttons img {
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .grid-pesagens .check-cell {
+            text-align: center;
+        }
+
+        .bottom-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .bottom-buttons input {
+            width: 165px;
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: "Delicious Handrawn", cursive;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .bottom-buttons input:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            background-color: #002855;
+            color: #fff;
+            text-align: center;
+            padding: 35px;
+            position: absolute;
+            width: 100%;
+            height: 111px;
+            bottom: 0;
+        }
+
+        footer span {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        footer img {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .container-table-ponderal{
+            margin: 14px;
+        }
+        
+    </style>
     <title></title>
 </head>
 <body>
-<div class="barra02" align="center">
-			Ponderal</div>
+<div class="header">
+        <a href="https://fazendacarnauba.com/">
+            <img src="../img/sgp2.png" alt="Logo da Fazenda">
+        </a>
+        <div class="header-logout">
+          <img src="../img/sair.png" alt="Logo">
+          <p>Sair</p>
+        </div>
+    </div>
+
     <form id="form1" runat="server">
 
      <div>
@@ -41,7 +200,9 @@
     <div>
         &nbsp;
     </div>
-    <asp:GridView ID="gridViewMensuracoes" runat="server" 
+    <div class ="container-table-ponderal">
+
+        <asp:GridView ID="gridViewMensuracoes" runat="server" 
     AutoGenerateColumns="False" CellPadding="4"  Width="100%"
     ForeColor="Black" BackColor="White"
     BorderColor="#156AE9" BorderStyle="Solid" BorderWidth="1px" CssClass="gvclass">
@@ -65,21 +226,22 @@
         </asp:TemplateField>
     </Columns>
     </asp:GridView>
+    </div>
+    
     <div>
         &nbsp;
     </div>
     <div class="icon">
         <table width="100%">
         <tr>
-		<td align="center">
-			<table>
-				<tr>
-					<td align="center"><asp:Button ID="btnInicio" runat="server" Text="Início" Width="165px" OnClick="btnInicio_Click"/></td>
-					<td align="center"><asp:Button ID="btnEncerrar" runat="server" Text="Encerrar" Width="165px" OnClick="btnEncerrar_Click" Visible="false"/></td>
-                    
-				</tr>
-			</table>
-		</td>
+		<div class="bottom-buttons">
+            <asp:Button ID="btnInicio" runat="server" Text="Início" OnClick="btnInicio_Click"/>
+            <asp:Button ID="btnEncerrar" runat="server" Text="Encerrar" OnClick="btnEncerrar_Click" Visible="false"/>
+        </div>
+         <footer>
+        <span>&copy; 2024 - Todos os direitos reservados.</span>
+        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
+    </footer>
 		
 	    </tr>
 	</table>

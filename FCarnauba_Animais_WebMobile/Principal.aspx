@@ -30,11 +30,12 @@
             align-items: center;
             justify-content: center;
             gap: 50px;
+            height: 115px;
         }
 
         .header img {
-            width: 343px;
-            height: 96px;
+            width: 330px;
+            height: 80px;
         }
 
         .header h1 {
@@ -47,11 +48,17 @@
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            
+        }
+        .container-button
+        {
+            width: 430px;
+           
         }
 
         .menu-button {
-            width: 478px;
             height: 138px;
+            width: 100%;
             background-color: #ffcc00;
             color: #000;
             font-size: 1.2rem;
@@ -64,6 +71,17 @@
             justify-content: flex-start;
             text-decoration: none;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .menu-buttom
+            {
+                width: 90% !important;
+            }
+            .container-button
+            {
+                width: 98%px;
+            }
+                
         }
 
         .menu-button img {
@@ -111,7 +129,7 @@
          .header-logout {
             display: flex;
             align-items: center; 
-            gap: 8px; 
+            gap: 3px; 
             color: white; 
             font-size: 16px; 
             line-height: 1; 
@@ -127,6 +145,11 @@
             display: flex;
             align-items: center;
             line-height: 1;
+            
+        }
+        .header-logout p
+        {
+            margin-top:13px;
         }
         
     </style>
@@ -143,20 +166,24 @@
     </div>
 
     <div class="menu">
-        <a href="Leiteiro.aspx" class="menu-button">
-            <img src="../img/icon_milk.png" alt="Controle Leiteiro">
-            <span>Controle Leiteiro</span>
-        </a>
-
-        <a href="Ponderal.aspx" class="menu-button">
-            <img src="../img/icon_bal.png" alt="Ponderal">
-            <span>Ponderal</span>
-        </a>
+        <div class="container-button">
+            <a href="Leiteiro.aspx" class="menu-button">
+                <img src="../img/icon_milk.png" alt="Controle Leiteiro">
+                <span>Controle Leiteiro</span>
+            </a>
+        </div>
+        
+        <div class="container-button">
+            <a href="Ponderal.aspx" class="menu-button">
+                <img src="../img/icon_bal.png" alt="Ponderal">
+                <span>Ponderal</span>
+            </a>
+        </div>
     </div>
 
     <footer>
         <span>&copy; 2024 - Todos os direitos reservados.</span>
-        <img src="../img/logo_lightbase.png" alt="Logo da Lightbase">
+        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
     </footer>
 </body>
 </html>
