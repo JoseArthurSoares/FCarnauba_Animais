@@ -166,8 +166,8 @@
         }
 
         footer img {
-            height: 30px;
-            margin-left: 10px;
+            height: 39px;
+            margin-left: 13px;
         }
 
         .container-table-ponderal{
@@ -238,10 +238,10 @@
             <asp:Button ID="btnInicio" runat="server" Text="Início" OnClick="btnInicio_Click"/>
             <asp:Button ID="btnEncerrar" runat="server" Text="Encerrar" OnClick="btnEncerrar_Click" Visible="false"/>
         </div>
-         <footer>
-        <span>&copy; 2024 - Todos os direitos reservados.</span>
-        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
-    </footer>
+    <footer>
+            <span>&copy; 2024 - Todos os direitos reservados.</span>
+            <img src="../img/logo-lightbase2.png" alt="Logo da Lightbase">
+        </footer>
 		
 	    </tr>
 	</table>

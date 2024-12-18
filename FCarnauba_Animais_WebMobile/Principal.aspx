@@ -115,8 +115,8 @@
         }
 
         footer img {
-            height: 30px;
-            margin-left: 10px;
+            height: 39px;
+            margin-left: 13px;
         }
         
         footer span
@@ -182,8 +182,8 @@
     </div>
 
     <footer>
-        <span>&copy; 2024 - Todos os direitos reservados.</span>
-        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
-    </footer>
+            <span>&copy; 2024 - Todos os direitos reservados.</span>
+            <img src="../img/logo-lightbase2.png" alt="Logo da Lightbase">
+        </footer>
 </body>
 </html>

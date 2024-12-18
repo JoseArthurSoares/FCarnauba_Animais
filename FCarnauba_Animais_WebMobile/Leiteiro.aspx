@@ -142,22 +142,29 @@
             background-color: #002855;
             color: #fff;
             text-align: center;
-            position: relative;
             padding: 35px;
+            position: fixed;
+            width: 100%;
             height: 111px;
-            bottom: 0px;
+            bottom: 0;
         }
 
-        footer span {
+        footer img {
+            height: 39px;
+            margin-left: 13px;
+        }
+        
+        footer span
+        {
             font-family: "Delius", cursive;
             font-weight: 400;
             font-style: normal;
         }
+        
+        .container-leiteiro {
+			padding-bottom: 111px;
+		}
 
-        footer img {
-            height: 30px;
-            margin-left: 10px;
-        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="./Scripts/jquery-1.9.1.min.js"></script>
@@ -307,7 +314,7 @@
 	    
     <footer>
         <span>&copy; 2024 - Todos os direitos reservados.</span>
-        <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
+        <img src="../img/logo-lightbase2.png" alt="Logo da Lightbase">
     </footer>
 
     <asp:ObjectDataSource ID="pesagensLeiteDataSource" runat="server" 
