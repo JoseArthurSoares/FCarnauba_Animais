@@ -182,7 +182,7 @@
         <a href="https://fazendacarnauba.com/">
             <img src="../img/sgp2.png" alt="Logo da Fazenda">
         </a>
-        <div class="header-logout">
+        <div class="header-logout" style="cursor: pointer;" onclick="window.location.href='Account/Login.aspx';">
           <img src="../img/sair.png" alt="Logo">
           <p>Sair</p>
         </div>
