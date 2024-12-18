@@ -10,8 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazenda Carnaúba - Controle Leiteiro</title>
     <link rel="icon" type="image/png" href="img/favicon-1.png">
-    <link rel="stylesheet" type="text/css" href="./Styles/SiteMobile.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./Styles/SiteMobile.css" />
+	<link rel="stylesheet" type="text/css" href="./Styles/Site.css" />
+    <link rel="stylesheet" type="text/css" href="./Styles/smoothness.css" />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" /> 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Delius&display=swap');
@@ -22,7 +24,8 @@
             margin: 0;
             padding: 0;
         }
-
+        
+        
         .header {
             background-color: #002855;
             color: #fff;
@@ -115,6 +118,7 @@
         .bottom-buttons {
             display: flex;
             justify-content: center;
+            padding-top: 30px;
             gap: 20px;
         }
 
@@ -138,11 +142,10 @@
             background-color: #002855;
             color: #fff;
             text-align: center;
+            position: relative;
             padding: 35px;
-           position: absolute;
-            width: 100%;
             height: 111px;
-            bottom: 0;
+            bottom: 0px;
         }
 
         footer span {
@@ -183,9 +186,14 @@
         					DataKeyNames="PesagemLoteId" AllowPaging="False" PageSize="10" ShowFooter="False" OnRowCommand="gvPesagensLeite_RowCommand"
         					OnRowDataBound="gvPesagensLeite_RowDataBound" OnRowUpdating="gvPesagensLeite_RowUpdating" OnRowUpdated="gvPesagensLeite_RowUpdated">
         					<RowStyle CssClass="gridlinha01" />
-        					<AlternatingRowStyle CssClass="gridlinha02" />
-        					<HeaderStyle CssClass="gridtitulo" />
-        					<FooterStyle CssClass="gridrodape" />
+                            					    <AlternatingRowStyle CssClass="gridlinha02" />
+                            					    <HeaderStyle CssClass="gridtitulo" />
+                            					    <FooterStyle CssClass="gridrodape" />
+                                                    <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                                                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                                    <SortedAscendingHeaderStyle BackColor="#808080" CssClass="sortasc"/>
+                                                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                                    <SortedDescendingHeaderStyle BackColor="#383838" CssClass="sortdesc"/>
                             
                             <Columns>
                             <asp:TemplateField HeaderText="Matriz" SortExpression="NomeMatriz" HeaderStyle-Width="25%">
@@ -296,7 +304,7 @@
             <asp:Button ID="btnEncerrar" runat="server" Text="Encerrar" OnClick="btnEncerrar_Click" Visible="false"/>
         </div>
     </div>
-
+	    
     <footer>
         <span>&copy; 2024 - Todos os direitos reservados.</span>
         <img src="../img/logo-lightbase.png" alt="Logo da Lightbase">
